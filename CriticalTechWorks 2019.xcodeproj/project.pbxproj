@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151025082331569400603F55 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151025072331569400603F55 /* CustomImageView.swift */; };
 		1572D71223313E7400CFBA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D71123313E7400CFBA6F /* AppDelegate.swift */; };
 		1572D71423313E7400CFBA6F /* TopHeadlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D71323313E7400CFBA6F /* TopHeadlinesViewController.swift */; };
 		1572D71923313E7600CFBA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1572D71823313E7600CFBA6F /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151025072331569400603F55 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CriticalTechWorks 2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1572D71123313E7400CFBA6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1572D71323313E7400CFBA6F /* TopHeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15102509233168F400603F55 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				151025072331569400603F55 /* CustomImageView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		1572D70523313E7400CFBA6F = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +184,7 @@
 			children = (
 				1572D74F233148CA00CFBA6F /* HeadlineTableViewCell.swift */,
 				1572D750233148CA00CFBA6F /* HeadlineTableViewCell.xib */,
+				15102509233168F400603F55 /* Utils */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,6 +275,7 @@
 				1572D73C23313EA400CFBA6F /* URLSessionProvider.swift in Sources */,
 				1572D73A23313EA400CFBA6F /* Task.swift in Sources */,
 				1572D71223313E7400CFBA6F /* AppDelegate.swift in Sources */,
+				151025082331569400603F55 /* CustomImageView.swift in Sources */,
 				1572D73F23313EA400CFBA6F /* ServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

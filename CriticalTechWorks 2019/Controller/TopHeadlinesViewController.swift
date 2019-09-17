@@ -12,13 +12,20 @@ class TopHeadlinesViewController: UITableViewController {
     
     var news: News?
     private let sessionProvider = URLSessionProvider()
-    private let cellIdentifier = "cellId"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        setupTableView()
         getNews()
+    }
+
+    func setupTableView() {
+        tableView.alpha = 1.0
+        tableView.register(UINib(nibName: HeadlineTableViewCell.nibName, bundle: nil),
+                                 forCellReuseIdentifier: HeadlineTableViewCell.cellIdentifier)
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 250
     }
     
     func getNews() {
@@ -27,10 +34,10 @@ class TopHeadlinesViewController: UITableViewController {
             sessionProvider.request(type: News.self, service: NewsService.headlines(country: countryCode)) { [weak self] (response) in
                 switch response {
                 case let .success(news):
-                    print(news)
                     self?.news = news
                     DispatchQueue.main.async {
                         self?.tableView.reloadData()
+                        self?.tableView.alpha = 1.0
                     }
                 case let .failure(error):
                     print(error)
@@ -47,8 +54,12 @@ extension TopHeadlinesViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: cellIdentifier)
-        cell.textLabel?.text = news?.articles[indexPath.row].title
+        let cell = tableView.dequeueReusableCell(withIdentifier: HeadlineTableViewCell.cellIdentifier, for: indexPath)
+            as! HeadlineTableViewCell
+
+        if let article = news?.articles[indexPath.row] {
+            cell.setup(article: article)
+        }
         return cell
     }
 }

@@ -10,15 +10,16 @@ import UIKit
 
 class HeadlineTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    static let nibName = "HeadlineTableViewCell"
+    static let cellIdentifier = "cellId"
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var imageCell: CustomImageView!
+    
+    func setup(article: Article) {
+        self.titleLabel?.text = article.title
+        self.imageCell.downloadImage(from: article.urlToImage)
+        print(article.urlToImage)
     }
     
 }
