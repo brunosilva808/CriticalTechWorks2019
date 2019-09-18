@@ -29,6 +29,7 @@
 		1572D752233148CA00CFBA6F /* HeadlineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1572D750233148CA00CFBA6F /* HeadlineTableViewCell.xib */; };
 		15FDC26A23322E3A00AC7092 /* CriticalTechWorks_2019SlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FDC26923322E3A00AC7092 /* CriticalTechWorks_2019SlowTests.swift */; };
 		15FDC2782332314C00AC7092 /* CriticalTechWorks_2019FakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FDC2772332314C00AC7092 /* CriticalTechWorks_2019FakeTests.swift */; };
+		15FDC2802332398800AC7092 /* top_headlines.json in Resources */ = {isa = PBXBuildFile; fileRef = 15FDC27F2332398800AC7092 /* top_headlines.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		15FDC2752332314C00AC7092 /* CriticalTechWorks 2019FakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CriticalTechWorks 2019FakeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15FDC2772332314C00AC7092 /* CriticalTechWorks_2019FakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticalTechWorks_2019FakeTests.swift; sourceTree = "<group>"; };
 		15FDC2792332314C00AC7092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15FDC27F2332398800AC7092 /* top_headlines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_headlines.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				15FDC2772332314C00AC7092 /* CriticalTechWorks_2019FakeTests.swift */,
+				15FDC27F2332398800AC7092 /* top_headlines.json */,
 				15FDC2792332314C00AC7092 /* Info.plist */,
 			);
 			path = "CriticalTechWorks 2019FakeTests";
@@ -371,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15FDC2802332398800AC7092 /* top_headlines.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
