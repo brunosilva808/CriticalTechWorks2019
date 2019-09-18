@@ -1,5 +1,5 @@
 //
-//  CriticalTechWorks_2019FakeTests.swift
+//  TopHeadlinesViewController.swift
 //  CriticalTechWorks 2019FakeTests
 //
 //  Created by Bruno on 18/09/2019.
@@ -9,10 +9,11 @@
 import XCTest
 @testable import CriticalTechWorks_2019
 
-class CriticalTechWorks_2019FakeTests: XCTestCase {
+class TopHeadlinesViewControllerTests: XCTestCase {
 
-//    var sut: TopHeadlinesViewController!
-//
+    var sut: TopHeadlinesViewController!
+    var window: UIWindow!
+
 //    override func setUp() {
 //        super.setUp()
 //        sut = TopHeadlinesViewController()
@@ -39,40 +40,23 @@ class CriticalTechWorks_2019FakeTests: XCTestCase {
 //        // given
 //    }
 
-    var sessionProvider: URLSessionProvider!
-    
     override func setUp() {
         super.setUp()
-        sessionProvider = URLSessionProvider()
+        sut = TopHeadlinesViewController()
     }
+    
     override func tearDown() {
-        sessionProvider = nil
+        sut = nil
         super.tearDown()
     }
     
-    func testRequest() {
+    func testTopHeadlinesAPIComplete() {
         // given
-        let service = NewsService.headlines(country: "US")
-        let type = News.self
-        var responseNews: News?
-        var responseError: NetworkError?
-        let promise = expectation(description: "Completion handler invoked")
         
         // when
-        sessionProvider.request(type: type, service: service, completion: { (response) in
-            switch response {
-            case let .success(news):
-                responseNews = news
-            case let .failure(error):
-                responseError = error
-            }
-            
-            promise.fulfill()
-        })
-        wait(for: [promise], timeout: 5)
+        sut.getTopHeadlines()
         
         // then
-        XCTAssertNil(responseError)
-        XCTAssertNotNil(responseNews)
     }
+    
 }

@@ -9,15 +9,12 @@ import Foundation
 
 enum NewsService: ServiceProtocol {
     
-    case headlines(country: String)
-    case details(locationId: String)
+    case headlines(countryCode: String)
     
     var path: String {
         switch self {
         case .headlines:
             return "top-headlines"
-        case .details:
-            return "geocode.json"
         }
     }
     
@@ -27,11 +24,8 @@ enum NewsService: ServiceProtocol {
     
     var task: Task {
         switch self {
-        case let .headlines(country):
-            let parameters = ["country": country]
-            return .requestParameters(parameters)
-        case let .details(locationId):
-            let parameters = ["locationid": locationId]//, "jsonattributes": 1, "gen": 9] as [String : Any]
+        case let .headlines(countryCode):
+            let parameters = ["country": countryCode]
             return .requestParameters(parameters)
         }
     }

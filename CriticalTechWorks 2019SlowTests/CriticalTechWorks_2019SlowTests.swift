@@ -43,5 +43,5 @@ class CriticalTechWorks_2019SlowTests: XCTestCase {
         XCTAssertNil(responseError)
         XCTAssertEqual(statusCode, 200)
     }
-    
+
 }

@@ -16,18 +16,9 @@ class TopHeadlinesViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let countryCode = getCountryCode() ?? ""
-        self.title = "Top Headlines in " + countryCode
+        self.title = "Top Headlines in " + NSLocale().getCountryCode()
         setupTableView()
-        getNews()
-    }
-    
-    func getCountryCode() -> String? {
-        if let countryCode = (Locale.current as NSLocale).object(forKey: .countryCode) as? String {
-            return countryCode
-        }
-        
-        return nil
+        getTopHeadlines()
     }
 
     private func setupTableView() {
@@ -38,20 +29,18 @@ class TopHeadlinesViewController: UITableViewController {
         tableView.estimatedRowHeight = 250
     }
     
-    private func getNews() {
-        if let countryCode = getCountryCode() {
-            sessionProvider.request(type: News.self, service: NewsService.headlines(country: countryCode)) { [weak self] (response) in
-                switch response {
-                case let .success(news):
-                    DispatchQueue.main.async {
-                        self?.articles = news.articles.sorted(by: { return $0.publishedAt > $1.publishedAt })
+    func getTopHeadlines() {
+        sessionProvider.request(type: News.self, service: NewsService.headlines(countryCode: NSLocale().getCountryCode())) { [weak self] (response) in
+            switch response {
+            case let .success(news):
+                DispatchQueue.main.async {
+                    self?.articles = news.articles.sorted(by: { return $0.publishedAt > $1.publishedAt })
 
-                        self?.tableView.reloadData()
-                        self?.tableView.alpha = 1.0
-                    }
-                case let .failure(error):
-                    print(error)
+                    self?.tableView.reloadData()
+                    self?.tableView.alpha = 1.0
                 }
+            case let .failure(error):
+                print(error)
             }
         }
     }
