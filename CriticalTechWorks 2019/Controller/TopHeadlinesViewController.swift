@@ -40,7 +40,7 @@ class TopHeadlinesViewController: UITableViewController {
                     DispatchQueue.main.async {
                         self?.news = news
 //                        self?.news?.articles.sort(by: { return $0.publishedAt > $1.publishedAt })
-                        
+
                         self?.tableView.reloadData()
                         self?.tableView.alpha = 1.0
                     }
