@@ -10,7 +10,7 @@ import UIKit
 
 class TopHeadlinesViewController: UITableViewController {
     
-    var news: News?
+    private var news: News?
     private let sessionProvider = URLSessionProvider()
 
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ class TopHeadlinesViewController: UITableViewController {
         getNews()
     }
 
-    func setupTableView() {
+    private func setupTableView() {
         tableView.alpha = 1.0
         tableView.register(UINib(nibName: HeadlineTableViewCell.nibName, bundle: nil),
                                  forCellReuseIdentifier: HeadlineTableViewCell.cellIdentifier)
@@ -28,14 +28,16 @@ class TopHeadlinesViewController: UITableViewController {
         tableView.estimatedRowHeight = 250
     }
     
-    func getNews() {
+    private func getNews() {
 
         if let countryCode = (Locale.current as NSLocale).object(forKey: .countryCode) as? String {
             sessionProvider.request(type: News.self, service: NewsService.headlines(country: countryCode)) { [weak self] (response) in
                 switch response {
                 case let .success(news):
-                    self?.news = news
                     DispatchQueue.main.async {
+                        self?.news = news
+                        self?.news?.articles.sort(by: { return $0.publishedAt > $1.publishedAt })
+                        
                         self?.tableView.reloadData()
                         self?.tableView.alpha = 1.0
                     }

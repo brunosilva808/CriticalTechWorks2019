@@ -13,7 +13,7 @@ import Foundation
 struct News: Codable {
     let status: String
     let totalResults: Int
-    let articles: [Article]
+    var articles: [Article]
 }
 
 // MARK: - Article
@@ -23,7 +23,8 @@ struct Article: Codable {
     let title, articleDescription: String
     let url: String
     let urlToImage: String
-    let publishedAt, content: String
+    let publishedAt: String
+    let content: String
     
     enum CodingKeys: String, CodingKey {
         case source, author, title
