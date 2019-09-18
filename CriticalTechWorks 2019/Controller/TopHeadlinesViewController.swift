@@ -16,6 +16,9 @@ class TopHeadlinesViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let countryCode = (Locale.current as NSLocale).object(forKey: .countryCode) as? String {
+            self.title = "Top Headlines in " + countryCode
+        }
         setupTableView()
         getNews()
     }
@@ -36,7 +39,7 @@ class TopHeadlinesViewController: UITableViewController {
                 case let .success(news):
                     DispatchQueue.main.async {
                         self?.news = news
-                        self?.news?.articles.sort(by: { return $0.publishedAt > $1.publishedAt })
+//                        self?.news?.articles.sort(by: { return $0.publishedAt > $1.publishedAt })
                         
                         self?.tableView.reloadData()
                         self?.tableView.alpha = 1.0

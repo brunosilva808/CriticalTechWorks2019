@@ -27,7 +27,26 @@
 		1572D74C23313EDD00CFBA6F /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D74723313EDD00CFBA6F /* News.swift */; };
 		1572D751233148CA00CFBA6F /* HeadlineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D74F233148CA00CFBA6F /* HeadlineTableViewCell.swift */; };
 		1572D752233148CA00CFBA6F /* HeadlineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1572D750233148CA00CFBA6F /* HeadlineTableViewCell.xib */; };
+		15FDC26A23322E3A00AC7092 /* CriticalTechWorks_2019SlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FDC26923322E3A00AC7092 /* CriticalTechWorks_2019SlowTests.swift */; };
+		15FDC2782332314C00AC7092 /* CriticalTechWorks_2019FakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FDC2772332314C00AC7092 /* CriticalTechWorks_2019FakeTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15FDC26C23322E3A00AC7092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1572D70623313E7400CFBA6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1572D70D23313E7400CFBA6F;
+			remoteInfo = "CriticalTechWorks 2019";
+		};
+		15FDC27A2332314C00AC7092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1572D70623313E7400CFBA6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1572D70D23313E7400CFBA6F;
+			remoteInfo = "CriticalTechWorks 2019";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		151025072331569400603F55 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
@@ -52,10 +71,30 @@
 		1572D74723313EDD00CFBA6F /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		1572D74F233148CA00CFBA6F /* HeadlineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineTableViewCell.swift; sourceTree = "<group>"; };
 		1572D750233148CA00CFBA6F /* HeadlineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadlineTableViewCell.xib; sourceTree = "<group>"; };
+		15FDC26723322E3A00AC7092 /* CriticalTechWorks 2019SlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CriticalTechWorks 2019SlowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15FDC26923322E3A00AC7092 /* CriticalTechWorks_2019SlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticalTechWorks_2019SlowTests.swift; sourceTree = "<group>"; };
+		15FDC26B23322E3A00AC7092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15FDC2752332314C00AC7092 /* CriticalTechWorks 2019FakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CriticalTechWorks 2019FakeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15FDC2772332314C00AC7092 /* CriticalTechWorks_2019FakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticalTechWorks_2019FakeTests.swift; sourceTree = "<group>"; };
+		15FDC2792332314C00AC7092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1572D70B23313E7400CFBA6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FDC26423322E3A00AC7092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FDC2722332314C00AC7092 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				1572D71023313E7400CFBA6F /* CriticalTechWorks 2019 */,
+				15FDC26823322E3A00AC7092 /* CriticalTechWorks 2019SlowTests */,
+				15FDC2762332314C00AC7092 /* CriticalTechWorks 2019FakeTests */,
 				1572D70F23313E7400CFBA6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019.app */,
+				15FDC26723322E3A00AC7092 /* CriticalTechWorks 2019SlowTests.xctest */,
+				15FDC2752332314C00AC7092 /* CriticalTechWorks 2019FakeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,6 +232,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		15FDC26823322E3A00AC7092 /* CriticalTechWorks 2019SlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				15FDC26923322E3A00AC7092 /* CriticalTechWorks_2019SlowTests.swift */,
+				15FDC26B23322E3A00AC7092 /* Info.plist */,
+			);
+			path = "CriticalTechWorks 2019SlowTests";
+			sourceTree = "<group>";
+		};
+		15FDC2762332314C00AC7092 /* CriticalTechWorks 2019FakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				15FDC2772332314C00AC7092 /* CriticalTechWorks_2019FakeTests.swift */,
+				15FDC2792332314C00AC7092 /* Info.plist */,
+			);
+			path = "CriticalTechWorks 2019FakeTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,6 +270,42 @@
 			productReference = 1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019.app */;
 			productType = "com.apple.product-type.application";
 		};
+		15FDC26623322E3A00AC7092 /* CriticalTechWorks 2019SlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15FDC27023322E3A00AC7092 /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019SlowTests" */;
+			buildPhases = (
+				15FDC26323322E3A00AC7092 /* Sources */,
+				15FDC26423322E3A00AC7092 /* Frameworks */,
+				15FDC26523322E3A00AC7092 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15FDC26D23322E3A00AC7092 /* PBXTargetDependency */,
+			);
+			name = "CriticalTechWorks 2019SlowTests";
+			productName = "CriticalTechWorks 2019SlowTests";
+			productReference = 15FDC26723322E3A00AC7092 /* CriticalTechWorks 2019SlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15FDC2742332314C00AC7092 /* CriticalTechWorks 2019FakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15FDC27C2332314C00AC7092 /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019FakeTests" */;
+			buildPhases = (
+				15FDC2712332314C00AC7092 /* Sources */,
+				15FDC2722332314C00AC7092 /* Frameworks */,
+				15FDC2732332314C00AC7092 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15FDC27B2332314C00AC7092 /* PBXTargetDependency */,
+			);
+			name = "CriticalTechWorks 2019FakeTests";
+			productName = "CriticalTechWorks 2019FakeTests";
+			productReference = 15FDC2752332314C00AC7092 /* CriticalTechWorks 2019FakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -221,6 +318,14 @@
 				TargetAttributes = {
 					1572D70D23313E7400CFBA6F = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					15FDC26623322E3A00AC7092 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1572D70D23313E7400CFBA6F;
+					};
+					15FDC2742332314C00AC7092 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1572D70D23313E7400CFBA6F;
 					};
 				};
 			};
@@ -238,6 +343,8 @@
 			projectRoot = "";
 			targets = (
 				1572D70D23313E7400CFBA6F /* CriticalTechWorks 2019 */,
+				15FDC26623322E3A00AC7092 /* CriticalTechWorks 2019SlowTests */,
+				15FDC2742332314C00AC7092 /* CriticalTechWorks 2019FakeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +357,20 @@
 				1572D71C23313E7600CFBA6F /* LaunchScreen.storyboard in Resources */,
 				1572D752233148CA00CFBA6F /* HeadlineTableViewCell.xib in Resources */,
 				1572D71923313E7600CFBA6F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FDC26523322E3A00AC7092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FDC2732332314C00AC7092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +401,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15FDC26323322E3A00AC7092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FDC26A23322E3A00AC7092 /* CriticalTechWorks_2019SlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FDC2712332314C00AC7092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FDC2782332314C00AC7092 /* CriticalTechWorks_2019FakeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15FDC26D23322E3A00AC7092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1572D70D23313E7400CFBA6F /* CriticalTechWorks 2019 */;
+			targetProxy = 15FDC26C23322E3A00AC7092 /* PBXContainerItemProxy */;
+		};
+		15FDC27B2332314C00AC7092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1572D70D23313E7400CFBA6F /* CriticalTechWorks 2019 */;
+			targetProxy = 15FDC27A2332314C00AC7092 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1572D71A23313E7600CFBA6F /* LaunchScreen.storyboard */ = {
@@ -446,6 +596,82 @@
 			};
 			name = Release;
 		};
+		15FDC26E23322E3A00AC7092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CriticalTechWorks 2019SlowTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019SlowTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CriticalTechWorks 2019.app/CriticalTechWorks 2019";
+			};
+			name = Debug;
+		};
+		15FDC26F23322E3A00AC7092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CriticalTechWorks 2019SlowTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019SlowTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CriticalTechWorks 2019.app/CriticalTechWorks 2019";
+			};
+			name = Release;
+		};
+		15FDC27D2332314C00AC7092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CriticalTechWorks 2019FakeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019FakeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CriticalTechWorks 2019.app/CriticalTechWorks 2019";
+			};
+			name = Debug;
+		};
+		15FDC27E2332314C00AC7092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CriticalTechWorks 2019FakeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019FakeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CriticalTechWorks 2019.app/CriticalTechWorks 2019";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -463,6 +689,24 @@
 			buildConfigurations = (
 				1572D72123313E7600CFBA6F /* Debug */,
 				1572D72223313E7600CFBA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15FDC27023322E3A00AC7092 /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019SlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15FDC26E23322E3A00AC7092 /* Debug */,
+				15FDC26F23322E3A00AC7092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15FDC27C2332314C00AC7092 /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019FakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15FDC27D2332314C00AC7092 /* Debug */,
+				15FDC27E2332314C00AC7092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
