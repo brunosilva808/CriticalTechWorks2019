@@ -37,18 +37,10 @@ class TopHeadlinesViewController: UITableViewController {
             switch response {
             case let .success(news):
                 DispatchQueue.main.async {
-                    print(news)
                     self?.articles = news.articles.sorted(by: { return $0.publishedAt > $1.publishedAt })
 
                     self?.tableView.reloadData()
                     self?.tableView.alpha = 1.0
-
-//                    let container = try! Container()
-//                    try! container.write { transaction in
-//                        if let article = self?.articles?.first {
-//                            transaction.add(article)
-//                        }
-//                    }
                 }
             case let .failure(error):
                 print(error)

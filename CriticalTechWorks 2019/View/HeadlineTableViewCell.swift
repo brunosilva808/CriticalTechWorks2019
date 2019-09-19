@@ -18,7 +18,7 @@ class HeadlineTableViewCell: UITableViewCell {
     
     func setup(article: Article) {
         self.titleLabel?.text = article.title
-        self.headlineImage.downloadImage(from: article.urlToImage)
+        self.headlineImage.downloadImage(from: article.urlToImage ?? "")
     }
     
 }

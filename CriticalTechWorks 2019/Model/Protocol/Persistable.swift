@@ -11,6 +11,7 @@ import RealmSwift
 
 public protocol Persistable {
     associatedtype ManagedObject: RealmSwift.Object
+    associatedtype Query: QueryType
     init(managedObject: ManagedObject)
     func managedObject() -> ManagedObject
 }

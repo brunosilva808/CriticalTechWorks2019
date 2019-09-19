@@ -21,15 +21,30 @@ class HeadlineViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
+        setupButtonTitle()
     }
     
     private func setupUI() {
         titleLabel.text = article.title
-        headlineImage.downloadImage(from: article.urlToImage)
+        headlineImage.downloadImage(from: article.urlToImage ?? "")
         contentLabel.text = article.content
         descriptionLabel.text = article.articleDescription
     }
+    
+    private func setupButtonTitle() {
+        if article.isSaved() {
+            self.favouritesButton.setTitle("Remove from Favorites", for: .normal)
+        } else {
+            self.favouritesButton.setTitle("Save to Favorites", for: .normal)
+        }
+    }
 
     @IBAction func saveToFavorites(_ sender: Any) {
+        let container = try! Container()
+        try! container.write { transaction in
+            transaction.add(article)
+            
+            setupButtonTitle()
+        }
     }
 }

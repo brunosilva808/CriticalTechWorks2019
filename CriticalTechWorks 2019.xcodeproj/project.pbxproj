@@ -18,6 +18,7 @@
 		15263C1823339D02009F1E09 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15263C1723339D02009F1E09 /* Source.swift */; };
 		15263C1B23339E2F009F1E09 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15263C1A23339E2F009F1E09 /* Persistable.swift */; };
 		15263C1E2333B58A009F1E09 /* top_headlines_static.json in Resources */ = {isa = PBXBuildFile; fileRef = 15263C1D2333B58A009F1E09 /* top_headlines_static.json */; };
+		15263C202333CB02009F1E09 /* QueryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15263C1F2333CB02009F1E09 /* QueryType.swift */; };
 		1572D71223313E7400CFBA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D71123313E7400CFBA6F /* AppDelegate.swift */; };
 		1572D71423313E7400CFBA6F /* TopHeadlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D71323313E7400CFBA6F /* TopHeadlinesViewController.swift */; };
 		1572D71923313E7600CFBA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1572D71823313E7600CFBA6F /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 		15263C1723339D02009F1E09 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		15263C1A23339E2F009F1E09 /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
 		15263C1D2333B58A009F1E09 /* top_headlines_static.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_headlines_static.json; sourceTree = "<group>"; };
+		15263C1F2333CB02009F1E09 /* QueryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryType.swift; sourceTree = "<group>"; };
 		1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CriticalTechWorks 2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1572D71123313E7400CFBA6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1572D71323313E7400CFBA6F /* TopHeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesViewController.swift; sourceTree = "<group>"; };
@@ -152,7 +154,6 @@
 		15263C06233252D7009F1E09 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				15263C14233396BC009F1E09 /* Manager */,
 				15263C07233252E6009F1E09 /* Extension */,
 			);
 			path = Helper;
@@ -166,18 +167,19 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		15263C14233396BC009F1E09 /* Manager */ = {
+		15263C14233396BC009F1E09 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
 				15263C12233396B7009F1E09 /* PersistanceManager.swift */,
 			);
-			path = Manager;
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 		15263C1C2333A053009F1E09 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
 				15263C1A23339E2F009F1E09 /* Persistable.swift */,
+				15263C1F2333CB02009F1E09 /* QueryType.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -213,6 +215,7 @@
 				1572D74323313EDD00CFBA6F /* Model */,
 				1572D753233148CE00CFBA6F /* View */,
 				1572D72523313EA400CFBA6F /* Networking */,
+				15263C14233396BC009F1E09 /* Persistence */,
 				15263C06233252D7009F1E09 /* Helper */,
 				1572D71823313E7600CFBA6F /* Assets.xcassets */,
 				1572D71A23313E7600CFBA6F /* LaunchScreen.storyboard */,
@@ -589,6 +592,7 @@
 				1572D74C23313EDD00CFBA6F /* News.swift in Sources */,
 				1572D73B23313EA400CFBA6F /* NetworkError.swift in Sources */,
 				1572D73D23313EA400CFBA6F /* URLComponentsExtension.swift in Sources */,
+				15263C202333CB02009F1E09 /* QueryType.swift in Sources */,
 				1572D74123313EA400CFBA6F /* ProviderProtocol.swift in Sources */,
 				1572D73823313EA400CFBA6F /* NetworkResponse.swift in Sources */,
 				1572D73723313EA400CFBA6F /* ParametersEncoding.swift in Sources */,
