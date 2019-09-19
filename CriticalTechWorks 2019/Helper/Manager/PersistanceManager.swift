@@ -8,25 +8,29 @@
 import Foundation
 import RealmSwift
 
-struct PersistanceManager {
-    
-    let realm = try! Realm()
-    
-    func get<T: Object>(object: T.Type) -> [T] {
-        var array:[T] = []
-        
-        let realmCompanies = realm.objects(object.self)
-        for abc in realmCompanies {
-            array.append(abc)
-        }
-        
-        return array
+public final class WriteTransaction {
+    private let realm: Realm
+    internal init(realm: Realm) {
+        self.realm = realm
     }
-    
-    func save<T: Object>(array: [T]) {
-        try! realm.write {
-            realm.add(array, update: true)
-        }
+    public func add<T: Persistable>(_ value: T, update: Bool = false) {
+        realm.add(value.managedObject(), update: update)
     }
-    
+}
+
+public final class Container {
+    private let realm: Realm
+    public convenience init() throws {
+        try self.init(realm: Realm())
+    }
+    internal init(realm: Realm) {
+        self.realm = realm
+    }
+    public func write(_ block: (WriteTransaction) throws -> Void)
+        throws {
+            let transaction = WriteTransaction(realm: realm)
+            try realm.write {
+                try block(transaction)
+            }
+    }
 }

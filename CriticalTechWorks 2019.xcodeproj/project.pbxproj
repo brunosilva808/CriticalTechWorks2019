@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		15263C1023338BAC009F1E09 /* HeadlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15263C0E23338BAC009F1E09 /* HeadlineViewController.swift */; };
 		15263C1123338BAC009F1E09 /* HeadlineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15263C0F23338BAC009F1E09 /* HeadlineViewController.xib */; };
 		15263C13233396B7009F1E09 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15263C12233396B7009F1E09 /* PersistanceManager.swift */; };
+		15263C1623339CE8009F1E09 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15263C1523339CE8009F1E09 /* Article.swift */; };
+		15263C1823339D02009F1E09 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15263C1723339D02009F1E09 /* Source.swift */; };
+		15263C1B23339E2F009F1E09 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15263C1A23339E2F009F1E09 /* Persistable.swift */; };
+		15263C1E2333B58A009F1E09 /* top_headlines_static.json in Resources */ = {isa = PBXBuildFile; fileRef = 15263C1D2333B58A009F1E09 /* top_headlines_static.json */; };
 		1572D71223313E7400CFBA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D71123313E7400CFBA6F /* AppDelegate.swift */; };
 		1572D71423313E7400CFBA6F /* TopHeadlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D71323313E7400CFBA6F /* TopHeadlinesViewController.swift */; };
 		1572D71923313E7600CFBA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1572D71823313E7600CFBA6F /* Assets.xcassets */; };
@@ -67,6 +71,10 @@
 		15263C0E23338BAC009F1E09 /* HeadlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineViewController.swift; sourceTree = "<group>"; };
 		15263C0F23338BAC009F1E09 /* HeadlineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadlineViewController.xib; sourceTree = "<group>"; };
 		15263C12233396B7009F1E09 /* PersistanceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		15263C1523339CE8009F1E09 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		15263C1723339D02009F1E09 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		15263C1A23339E2F009F1E09 /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
+		15263C1D2333B58A009F1E09 /* top_headlines_static.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_headlines_static.json; sourceTree = "<group>"; };
 		1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CriticalTechWorks 2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1572D71123313E7400CFBA6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1572D71323313E7400CFBA6F /* TopHeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +174,14 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		15263C1C2333A053009F1E09 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				15263C1A23339E2F009F1E09 /* Persistable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		1572D70523313E7400CFBA6F = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				1572D71123313E7400CFBA6F /* AppDelegate.swift */,
+				15263C1D2333B58A009F1E09 /* top_headlines_static.json */,
 				1572D74E2331412F00CFBA6F /* Controller */,
 				1572D74323313EDD00CFBA6F /* Model */,
 				1572D753233148CE00CFBA6F /* View */,
@@ -267,6 +284,9 @@
 			isa = PBXGroup;
 			children = (
 				1572D74723313EDD00CFBA6F /* News.swift */,
+				15263C1523339CE8009F1E09 /* Article.swift */,
+				15263C1723339D02009F1E09 /* Source.swift */,
+				15263C1C2333A053009F1E09 /* Protocol */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -332,7 +352,6 @@
 				A998920EDFE2B4DB299D9ACA /* Pods-CriticalTechWorks 2019SlowTests.debug.xcconfig */,
 				0E17DCE5DD6F9BC82B36EC45 /* Pods-CriticalTechWorks 2019SlowTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -445,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15263C1123338BAC009F1E09 /* HeadlineViewController.xib in Resources */,
+				15263C1E2333B58A009F1E09 /* top_headlines_static.json in Resources */,
 				1572D71C23313E7600CFBA6F /* LaunchScreen.storyboard in Resources */,
 				1572D752233148CA00CFBA6F /* HeadlineTableViewCell.xib in Resources */,
 				1572D71923313E7600CFBA6F /* Assets.xcassets in Resources */,
@@ -563,6 +583,8 @@
 				1572D751233148CA00CFBA6F /* HeadlineTableViewCell.swift in Sources */,
 				1572D74023313EA400CFBA6F /* URLSessionProtocol.swift in Sources */,
 				1572D71423313E7400CFBA6F /* TopHeadlinesViewController.swift in Sources */,
+				15263C1B23339E2F009F1E09 /* Persistable.swift in Sources */,
+				15263C1823339D02009F1E09 /* Source.swift in Sources */,
 				1572D73E23313EA400CFBA6F /* URLRequestExtension.swift in Sources */,
 				1572D74C23313EDD00CFBA6F /* News.swift in Sources */,
 				1572D73B23313EA400CFBA6F /* NetworkError.swift in Sources */,
@@ -573,6 +595,7 @@
 				15263C1023338BAC009F1E09 /* HeadlineViewController.swift in Sources */,
 				1572D73923313EA400CFBA6F /* HTTPMethod.swift in Sources */,
 				1572D73C23313EA400CFBA6F /* URLSessionProvider.swift in Sources */,
+				15263C1623339CE8009F1E09 /* Article.swift in Sources */,
 				1572D73A23313EA400CFBA6F /* Task.swift in Sources */,
 				15263C13233396B7009F1E09 /* PersistanceManager.swift in Sources */,
 				15263C0523324FAE009F1E09 /* NSLocale+CountryCode.swift in Sources */,
