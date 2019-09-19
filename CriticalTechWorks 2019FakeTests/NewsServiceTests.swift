@@ -49,20 +49,19 @@ class NewsServiceTests: XCTestCase {
         XCTAssertNotNil(responseNews)
     }
     
-    func testTopHeadlinesRequestError() {
+    func testTopHeadlinesRequestErrorUnknown() {
         // given
         let countryCode = NSLocale().getCountryCode()
         let service = NewsService.headlines(countryCode: countryCode)
         let type = Article.self
-        var responseNews: News?
         var responseError: NetworkError?
         let promise = expectation(description: "Completion handler invoked")
         
         // when
         sessionProvider.request(type: type, service: service, completion: { (response) in
             switch response {
-            case let .success(news):
-                responseNews = news
+            case .success(_):
+                break
             case let .failure(error):
                 responseError = error
             }
@@ -72,7 +71,6 @@ class NewsServiceTests: XCTestCase {
         wait(for: [promise], timeout: 5)
         
         // then
-        XCTAssertNil(responseError)
-        XCTAssertNotNil(responseNews)
+        XCTAssertNotNil(responseError)
     }
 }
