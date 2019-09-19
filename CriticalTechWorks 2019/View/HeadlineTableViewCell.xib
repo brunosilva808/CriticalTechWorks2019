@@ -44,7 +44,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="imageCell" destination="7kR-aX-ixk" id="ixT-1V-bVb"/>
+                <outlet property="headlineImage" destination="7kR-aX-ixk" id="ixT-1V-bVb"/>
                 <outlet property="titleLabel" destination="i3C-Dr-GZ6" id="sew-fi-lVt"/>
             </connections>
             <point key="canvasLocation" x="41.600000000000001" y="46.776611694152926"/>

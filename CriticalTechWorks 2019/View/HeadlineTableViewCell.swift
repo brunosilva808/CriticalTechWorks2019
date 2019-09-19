@@ -13,12 +13,12 @@ class HeadlineTableViewCell: UITableViewCell {
     static let nibName = "HeadlineTableViewCell"
     static let cellIdentifier = "cellId"
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var imageCell: CustomImageView!
+    @IBOutlet weak private var titleLabel: UILabel!
+    @IBOutlet weak private var headlineImage: CustomImageView!
     
     func setup(article: Article) {
         self.titleLabel?.text = article.title
-        self.imageCell.downloadImage(from: article.urlToImage)
+        self.headlineImage.downloadImage(from: article.urlToImage)
     }
     
 }

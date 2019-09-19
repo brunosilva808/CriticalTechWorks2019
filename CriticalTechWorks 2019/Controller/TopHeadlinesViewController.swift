@@ -12,6 +12,7 @@ class TopHeadlinesViewController: UITableViewController {
     
     private var articles: [Article]?
     private let sessionProvider = URLSessionProvider()
+    private var headlineViewController: HeadlineViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +49,7 @@ class TopHeadlinesViewController: UITableViewController {
 }
 
 extension TopHeadlinesViewController {
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articles?.count ?? 0
     }
@@ -60,5 +62,11 @@ extension TopHeadlinesViewController {
             cell.setup(article: article)
         }
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        headlineViewController = HeadlineViewController()
+        headlineViewController.article = articles?[indexPath.row]
+        self.navigationController?.pushViewController(headlineViewController, animated: true)
     }
 }
