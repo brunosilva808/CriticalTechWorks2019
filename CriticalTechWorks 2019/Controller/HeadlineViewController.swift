@@ -13,6 +13,7 @@ class HeadlineViewController: UIViewController {
     var article: Article!
     @IBOutlet weak private var titleLabel: UILabel!
     @IBOutlet weak private var headlineImage: CustomImageView!
+    @IBOutlet weak private var contentLabel: UILabel!
     @IBOutlet weak private var descriptionLabel: UILabel!
     @IBOutlet weak private var favouritesButton: UIButton!
     
@@ -25,6 +26,7 @@ class HeadlineViewController: UIViewController {
     private func setupUI() {
         titleLabel.text = article.title
         headlineImage.downloadImage(from: article.urlToImage)
+        contentLabel.text = article.content
         descriptionLabel.text = article.articleDescription
     }
 
