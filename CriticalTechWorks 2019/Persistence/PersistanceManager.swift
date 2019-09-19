@@ -18,6 +18,14 @@ public final class WriteTransaction {
     public func add<T: Persistable>(_ value: T, update: Bool = false) {
         realm.add(value.managedObject(), update: update)
     }
+    
+    func delete<T: Persistable>(_ value: T) {
+        realm.delete(value.managedObject())
+    }
+    
+    func delete(_ value: RealmSwift.Object) {
+        realm.delete(value)
+    }
 }
 
 public final class Container {
@@ -38,19 +46,6 @@ public final class Container {
                 try block(transaction)
             }
     }
-    
-//    func getObjects<T: Object>(type: T.Type, _ block: (WriteTransaction) throws -> Void) {
-//        print(realm.objects(type))
-//
-//        var array:[T] = []
-//
-//        let arrayRealm = realm.objects(type)
-//        for object in arrayRealm {
-//            array.append(object)
-//        }
-//
-//        print(realm.objects(type).filter("title == Hawaii police training sparks false emergency sirens - Fox News"))
-//    }
 
     public func values<T: Persistable> (_ type: T.Type, matching query: T.Query) -> FetchedResults<T> {
         var results = realm.objects(T.ManagedObject.self)

@@ -17,7 +17,7 @@ struct Article: Codable {
     let url: String
     let urlToImage: String?
     let publishedAt: String
-    let content: String
+    let content: String?
 //
     enum CodingKeys: String, CodingKey {
 ////        case source
@@ -39,6 +39,39 @@ struct Article: Codable {
         )
 
         return results.count == 0 ? false : true
+    }
+    
+    func save(completed: @escaping (() -> Void) ) {
+        DispatchQueue(label: "background").async {
+            autoreleasepool {
+                let container = try! Container()
+                try! container.write { transaction in
+                    transaction.add(self)
+                    
+                    completed()
+                }
+            }
+        }
+    }
+    
+    func delete(completed: @escaping (() -> Void) ) {
+        DispatchQueue(label: "background").async {
+            autoreleasepool {
+                let container = try! Container()
+                let object = container.values(
+                    Article.self,
+                    matching: .url("\(self.url)")
+                )
+                
+                try! container.write { transaction in
+                    if let article = object.results.first {
+                        transaction.delete(article)
+                    }
+                        
+                    completed()
+                }
+            }
+        }
     }
 }
 
@@ -76,7 +109,7 @@ extension Article: Persistable {
         article.url = url
         article.urlToImage = urlToImage ?? ""
         article.publishedAt = publishedAt
-        article.content = content
+        article.content = content ?? ""
         
         return article
     }

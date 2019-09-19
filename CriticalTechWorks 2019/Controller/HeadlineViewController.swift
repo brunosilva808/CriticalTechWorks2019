@@ -39,12 +39,37 @@ class HeadlineViewController: UIViewController {
         }
     }
 
-    @IBAction func saveToFavorites(_ sender: Any) {
-        let container = try! Container()
-        try! container.write { transaction in
-            transaction.add(article)
-            
-            setupButtonTitle()
+    @IBAction private func saveToFavorites(_ sender: Any) {
+        if article.isSaved() {
+            article.delete { [weak self] in
+                DispatchQueue.main.async {
+                    self?.setupButtonTitle()
+                }
+            }
+        } else {
+            article.save { [weak self] in
+                DispatchQueue.main.async {
+                    self?.setupButtonTitle()
+                }
+            }
         }
     }
+    
+//    func saveArticle() {
+//        let container = try! Container()
+//        try! container.write { transaction in
+//            transaction.add(article)
+//            
+//            setupButtonTitle()
+//        }
+//    }
+//    
+//    func deleteArticle() {
+//        let container = try! Container()
+//        try! container.write { transaction in
+//            transaction.delete(article)
+//            
+//            setupButtonTitle()
+//        }
+//    }
 }
