@@ -10,45 +10,65 @@ import UIKit
 
 class TopHeadlinesViewController: UITableViewController {
     
-    var news: News?
+    private var articles: [Article]?
     private let sessionProvider = URLSessionProvider()
-    private let cellIdentifier = "cellId"
+    private var headlineViewController: HeadlineViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
-        getNews()
+        self.title = "Top Headlines in " + NSLocale().getCountryCode()
+        setupTableView()
+        getTopHeadlines()
+    }
+
+    private func setupTableView() {
+        tableView.alpha = 1.0
+        tableView.register(UINib(nibName: HeadlineTableViewCell.nibName, bundle: nil),
+                                 forCellReuseIdentifier: HeadlineTableViewCell.cellIdentifier)
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 250
     }
     
-    func getNews() {
+    func getTopHeadlines() {
+        let countryCode = NSLocale().getCountryCode()
+        sessionProvider.request(type: News.self,
+                                service: NewsService.headlines(countryCode: countryCode)) { [weak self] (response) in
+            switch response {
+            case let .success(news):
+                DispatchQueue.main.async {
+                    self?.articles = news.articles.sorted(by: { return $0.publishedAt > $1.publishedAt })
 
-        if let countryCode = (Locale.current as NSLocale).object(forKey: .countryCode) as? String {
-            sessionProvider.request(type: News.self, service: NewsService.headlines(country: countryCode)) { [weak self] (response) in
-                switch response {
-                case let .success(news):
-                    print(news)
-                    self?.news = news
-                    DispatchQueue.main.async {
-                        self?.tableView.reloadData()
-                    }
-                case let .failure(error):
-                    print(error)
+                    self?.tableView.reloadData()
+                    self?.tableView.alpha = 1.0
                 }
+            case let .failure(error):
+                print(error)
             }
         }
     }
-
+    
 }
 
 extension TopHeadlinesViewController {
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return news?.articles.count ?? 0
+        return articles?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: cellIdentifier)
-        cell.textLabel?.text = news?.articles[indexPath.row].title
+        let cell = tableView.dequeueReusableCell(withIdentifier: HeadlineTableViewCell.cellIdentifier, for: indexPath)
+            as! HeadlineTableViewCell
+
+        if let article = articles?[indexPath.row] {
+            cell.setup(article: article)
+        }
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        headlineViewController = HeadlineViewController()
+        headlineViewController.article = articles?[indexPath.row]
+        self.navigationController?.pushViewController(headlineViewController, animated: true)
     }
 }

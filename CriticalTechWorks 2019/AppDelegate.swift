@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.makeKeyAndVisible()
-        window?.rootViewController = TopHeadlinesViewController()
+        window?.rootViewController = UINavigationController(rootViewController: TopHeadlinesViewController())
         
         return true
     }
