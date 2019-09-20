@@ -53,6 +53,12 @@
 		1571B0E82335131E004AA911 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571B0E62335131E004AA911 /* Environment.swift */; };
 		1571B0EB23351DF3004AA911 /* Info_PT.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1572D71D23313E7600CFBA6F /* Info_PT.plist */; };
 		1571B0EC23351DF6004AA911 /* Info_US.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1571B0E223350CE3004AA911 /* Info_US.plist */; };
+		1571B0F12335221E004AA911 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571B0EF2335221E004AA911 /* AuthenticationViewController.swift */; };
+		1571B0F22335221E004AA911 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571B0EF2335221E004AA911 /* AuthenticationViewController.swift */; };
+		1571B0F32335221E004AA911 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1571B0F02335221E004AA911 /* AuthenticationViewController.xib */; };
+		1571B0F42335221E004AA911 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1571B0F02335221E004AA911 /* AuthenticationViewController.xib */; };
+		1571B0F623352340004AA911 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571B0F523352340004AA911 /* String+Localized.swift */; };
+		1571B0F723352340004AA911 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571B0F523352340004AA911 /* String+Localized.swift */; };
 		1572D71223313E7400CFBA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D71123313E7400CFBA6F /* AppDelegate.swift */; };
 		1572D71423313E7400CFBA6F /* TopHeadlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D71323313E7400CFBA6F /* TopHeadlinesViewController.swift */; };
 		1572D71923313E7600CFBA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1572D71823313E7600CFBA6F /* Assets.xcassets */; };
@@ -114,6 +120,9 @@
 		1571B0E023350A0F004AA911 /* CriticalTechWorks 2019 US.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CriticalTechWorks 2019 US.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1571B0E223350CE3004AA911 /* Info_US.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_US.plist; sourceTree = "<group>"; };
 		1571B0E62335131E004AA911 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		1571B0EF2335221E004AA911 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		1571B0F02335221E004AA911 /* AuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
+		1571B0F523352340004AA911 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019 PT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CriticalTechWorks 2019 PT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1572D71123313E7400CFBA6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1572D71323313E7400CFBA6F /* TopHeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesViewController.swift; sourceTree = "<group>"; };
@@ -243,6 +252,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		1571B0F823352344004AA911 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1571B0F523352340004AA911 /* String+Localized.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		1572D70523313E7400CFBA6F = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				1572D71123313E7400CFBA6F /* AppDelegate.swift */,
+				1571B0F823352344004AA911 /* Helpers */,
 				1572D74323313EDD00CFBA6F /* Model */,
 				1572D753233148CE00CFBA6F /* View */,
 				1572D74E2331412F00CFBA6F /* Controller */,
@@ -353,6 +371,8 @@
 		1572D74E2331412F00CFBA6F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1571B0EF2335221E004AA911 /* AuthenticationViewController.swift */,
+				1571B0F02335221E004AA911 /* AuthenticationViewController.xib */,
 				155AA9922334ECF70036F37F /* Headlines */,
 				15263C0E23338BAC009F1E09 /* HeadlineViewController.swift */,
 				15263C0F23338BAC009F1E09 /* HeadlineViewController.xib */,
@@ -542,6 +562,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1571B0F42335221E004AA911 /* AuthenticationViewController.xib in Resources */,
 				1571B0D823350A0F004AA911 /* HeadlineViewController.xib in Resources */,
 				1571B0D923350A0F004AA911 /* LaunchScreen.storyboard in Resources */,
 				1571B0EC23351DF6004AA911 /* Info_US.plist in Resources */,
@@ -554,6 +575,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1571B0F32335221E004AA911 /* AuthenticationViewController.xib in Resources */,
 				1571B0EB23351DF3004AA911 /* Info_PT.plist in Resources */,
 				15263C1123338BAC009F1E09 /* HeadlineViewController.xib in Resources */,
 				1572D71C23313E7600CFBA6F /* LaunchScreen.storyboard in Resources */,
@@ -713,6 +735,7 @@
 				1571B0BC23350A0F004AA911 /* HeadlineTableViewCell.swift in Sources */,
 				1571B0BD23350A0F004AA911 /* URLSessionProtocol.swift in Sources */,
 				1571B0BE23350A0F004AA911 /* TopHeadlinesViewController.swift in Sources */,
+				1571B0F22335221E004AA911 /* AuthenticationViewController.swift in Sources */,
 				1571B0BF23350A0F004AA911 /* Persistable.swift in Sources */,
 				1571B0C023350A0F004AA911 /* Source.swift in Sources */,
 				1571B0C123350A0F004AA911 /* URLRequestExtension.swift in Sources */,
@@ -726,6 +749,7 @@
 				1571B0C923350A0F004AA911 /* NetworkResponse.swift in Sources */,
 				1571B0CA23350A0F004AA911 /* ParametersEncoding.swift in Sources */,
 				1571B0CB23350A0F004AA911 /* HeadlineViewController.swift in Sources */,
+				1571B0F723352340004AA911 /* String+Localized.swift in Sources */,
 				1571B0CC23350A0F004AA911 /* HTTPMethod.swift in Sources */,
 				1571B0CD23350A0F004AA911 /* URLSessionProvider.swift in Sources */,
 				1571B0CE23350A0F004AA911 /* Article.swift in Sources */,
@@ -746,6 +770,7 @@
 				1572D751233148CA00CFBA6F /* HeadlineTableViewCell.swift in Sources */,
 				1572D74023313EA400CFBA6F /* URLSessionProtocol.swift in Sources */,
 				1572D71423313E7400CFBA6F /* TopHeadlinesViewController.swift in Sources */,
+				1571B0F12335221E004AA911 /* AuthenticationViewController.swift in Sources */,
 				15263C1B23339E2F009F1E09 /* Persistable.swift in Sources */,
 				15263C1823339D02009F1E09 /* Source.swift in Sources */,
 				1572D73E23313EA400CFBA6F /* URLRequestExtension.swift in Sources */,
@@ -759,6 +784,7 @@
 				1572D73823313EA400CFBA6F /* NetworkResponse.swift in Sources */,
 				1572D73723313EA400CFBA6F /* ParametersEncoding.swift in Sources */,
 				15263C1023338BAC009F1E09 /* HeadlineViewController.swift in Sources */,
+				1571B0F623352340004AA911 /* String+Localized.swift in Sources */,
 				1572D73923313EA400CFBA6F /* HTTPMethod.swift in Sources */,
 				1572D73C23313EA400CFBA6F /* URLSessionProvider.swift in Sources */,
 				15263C1623339CE8009F1E09 /* Article.swift in Sources */,
