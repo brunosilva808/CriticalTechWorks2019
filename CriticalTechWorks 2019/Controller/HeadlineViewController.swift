@@ -32,7 +32,8 @@ class HeadlineViewController: UIViewController {
     }
     
     private func setupButtonTitle() {
-        if article.isSaved() {
+//        if article.isSaved() {
+        if article.isSaved {
             self.favouritesButton.setTitle("Remove from Favorites", for: .normal)
         } else {
             self.favouritesButton.setTitle("Save to Favorites", for: .normal)
@@ -40,7 +41,8 @@ class HeadlineViewController: UIViewController {
     }
 
     @IBAction private func saveToFavorites(_ sender: Any) {
-        if article.isSaved() {
+//        if article.isSaved() {
+        if article.isSaved {
             article.delete { [weak self] in
                 DispatchQueue.main.async {
                     self?.setupButtonTitle()

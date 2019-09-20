@@ -18,6 +18,7 @@ struct Article: Codable {
     let urlToImage: String?
     let publishedAt: String
     let content: String?
+    private(set) var isSaved: Bool = false
 //
     enum CodingKeys: String, CodingKey {
 ////        case source
@@ -31,44 +32,44 @@ struct Article: Codable {
 //        case content
     }
     
-    func isSaved() -> Bool {
-        let container = try! Container()
-        let results = container.values(
-            Article.self,
-            matching: .url("\(self.url)")
-        )
-
-        return results.count == 0 ? false : true
-    }
+//    func isSaved() -> Bool {
+//        let container = try! Container()
+//        let results = container.values(
+//            Article.self,
+//            matching: .url("\(self.url)")
+//        )
+//
+//        return results.count == 0 ? false : true
+//    }
     
-    func save(completed: @escaping (() -> Void) ) {
+    mutating func save(completed: @escaping (() -> Void) ) {
         DispatchQueue(label: "background").async {
             autoreleasepool {
                 let container = try! Container()
                 try! container.write { transaction in
                     transaction.add(self)
-                    
+                    self.isSaved = true
                     completed()
                 }
             }
         }
     }
     
-    func delete(completed: @escaping (() -> Void) ) {
+    mutating func delete(completed: @escaping (() -> Void) ) {
         DispatchQueue(label: "background").async {
             autoreleasepool {
                 let container = try! Container()
-                let object = container.values(
+                let objectsToDelete = container.values(
                     Article.self,
                     matching: .url("\(self.url)")
                 )
                 
                 try! container.write { transaction in
-                    if let article = object.results.first {
+                    if let article = objectsToDelete.results.first {
+                        self.isSaved = false
                         transaction.delete(article)
+                        completed()
                     }
-                        
-                    completed()
                 }
             }
         }
