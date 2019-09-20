@@ -10,37 +10,31 @@ import UIKit
 import RealmSwift
 
 struct Article: Codable {
-//    let source: Source
-//    let author: String?
     let title: String
     let articleDescription: String?
     let url: String
     let urlToImage: String?
     let publishedAt: String
     let content: String?
-    private(set) var isSaved: Bool = false
-//
+
     enum CodingKeys: String, CodingKey {
-////        case source
-//        case author
         case title
         case articleDescription = "description"
         case publishedAt
         case content
         case urlToImage
         case url
-//        case content
     }
     
-//    func isSaved() -> Bool {
-//        let container = try! Container()
-//        let results = container.values(
-//            Article.self,
-//            matching: .url("\(self.url)")
-//        )
-//
-//        return results.count == 0 ? false : true
-//    }
+    func isSaved() -> Bool {
+        let container = try! Container()
+        let results = container.values(
+            Article.self,
+            matching: .url("\(self.url)")
+        )
+
+        return results.count == 0 ? false : true
+    }
     
     mutating func save(completed: @escaping (() -> Void) ) {
         DispatchQueue(label: "background").async {
@@ -48,7 +42,6 @@ struct Article: Codable {
                 let container = try! Container()
                 try! container.write { transaction in
                     transaction.add(self)
-                    self.isSaved = true
                     completed()
                 }
             }
@@ -65,11 +58,12 @@ struct Article: Codable {
                 )
                 
                 try! container.write { transaction in
-                    if let article = objectsToDelete.results.first {
-                        self.isSaved = false
-                        transaction.delete(article)
-                        completed()
-                    }
+                    objectsToDelete.results.forEach { transaction.delete($0) }
+                    completed()
+//                    if let article = objectsToDelete.results.first {
+//                        transaction.delete(article)
+//                        completed()
+//                    }
                 }
             }
         }
@@ -77,8 +71,6 @@ struct Article: Codable {
 }
 
 final class ArticleObject: Object {
-//    @objc dynamic var source: Source?
-//    @objc dynamic var author: String? = ""
     @objc dynamic var title: String = ""
     @objc dynamic var articleDescription: String = ""
     @objc dynamic var url: String = ""
@@ -93,7 +85,6 @@ final class ArticleObject: Object {
 
 extension Article: Persistable {
     public init(managedObject: ArticleObject) {
-//        author = managedObject.author
         title = managedObject.title
         articleDescription = managedObject.articleDescription
         url = managedObject.url
@@ -104,7 +95,6 @@ extension Article: Persistable {
     
     public func managedObject() -> ArticleObject {
         let article = ArticleObject()
-//        article.author = author ?? ""
         article.title = title
         article.articleDescription = articleDescription ?? ""
         article.url = url

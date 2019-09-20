@@ -17,6 +17,7 @@ public final class WriteTransaction {
     
     public func add<T: Persistable>(_ value: T, update: Bool = false) {
         realm.add(value.managedObject(), update: update)
+        print("Realm save")
     }
     
     func delete<T: Persistable>(_ value: T) {
@@ -25,6 +26,7 @@ public final class WriteTransaction {
     
     func delete(_ value: RealmSwift.Object) {
         realm.delete(value)
+        print("Realm delete")
     }
 }
 

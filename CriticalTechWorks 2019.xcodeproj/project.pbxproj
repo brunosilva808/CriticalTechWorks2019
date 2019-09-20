@@ -17,7 +17,6 @@
 		15263C1623339CE8009F1E09 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15263C1523339CE8009F1E09 /* Article.swift */; };
 		15263C1823339D02009F1E09 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15263C1723339D02009F1E09 /* Source.swift */; };
 		15263C1B23339E2F009F1E09 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15263C1A23339E2F009F1E09 /* Persistable.swift */; };
-		15263C1E2333B58A009F1E09 /* top_headlines_static.json in Resources */ = {isa = PBXBuildFile; fileRef = 15263C1D2333B58A009F1E09 /* top_headlines_static.json */; };
 		15263C202333CB02009F1E09 /* QueryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15263C1F2333CB02009F1E09 /* QueryType.swift */; };
 		1572D71223313E7400CFBA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D71123313E7400CFBA6F /* AppDelegate.swift */; };
 		1572D71423313E7400CFBA6F /* TopHeadlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D71323313E7400CFBA6F /* TopHeadlinesViewController.swift */; };
@@ -75,7 +74,6 @@
 		15263C1523339CE8009F1E09 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		15263C1723339D02009F1E09 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		15263C1A23339E2F009F1E09 /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
-		15263C1D2333B58A009F1E09 /* top_headlines_static.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_headlines_static.json; sourceTree = "<group>"; };
 		15263C1F2333CB02009F1E09 /* QueryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryType.swift; sourceTree = "<group>"; };
 		1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CriticalTechWorks 2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1572D71123313E7400CFBA6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -210,7 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				1572D71123313E7400CFBA6F /* AppDelegate.swift */,
-				15263C1D2333B58A009F1E09 /* top_headlines_static.json */,
 				1572D74E2331412F00CFBA6F /* Controller */,
 				1572D74323313EDD00CFBA6F /* Model */,
 				1572D753233148CE00CFBA6F /* View */,
@@ -467,7 +464,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				15263C1123338BAC009F1E09 /* HeadlineViewController.xib in Resources */,
-				15263C1E2333B58A009F1E09 /* top_headlines_static.json in Resources */,
 				1572D71C23313E7600CFBA6F /* LaunchScreen.storyboard in Resources */,
 				1572D752233148CA00CFBA6F /* HeadlineTableViewCell.xib in Resources */,
 				1572D71923313E7600CFBA6F /* Assets.xcassets in Resources */,
