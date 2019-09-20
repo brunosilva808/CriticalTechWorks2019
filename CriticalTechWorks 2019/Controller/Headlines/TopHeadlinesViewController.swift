@@ -16,13 +16,13 @@ class TopHeadlinesViewController: BaseHeadlinesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "Top Headlines in " + Environment.sources.value
+        self.title = "TopHeadlines.title".localized + Environment.sources.value
         getTopHeadlines()
         setupBarButton()
     }
 
     private func setupBarButton() {
-        let button = UIBarButtonItem(title: "Go to Favorites",
+        let button = UIBarButtonItem(title: "favorites.button.title.favorites".localized,
                                       style: .plain,
                                       target: self,
                                       action: #selector(rightBarButtonPressed))

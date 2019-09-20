@@ -59,6 +59,8 @@
 		1571B0F42335221E004AA911 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1571B0F02335221E004AA911 /* AuthenticationViewController.xib */; };
 		1571B0F623352340004AA911 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571B0F523352340004AA911 /* String+Localized.swift */; };
 		1571B0F723352340004AA911 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571B0F523352340004AA911 /* String+Localized.swift */; };
+		1571B0FD23352450004AA911 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1571B10023352450004AA911 /* Localizable.strings */; };
+		1571B0FE23352450004AA911 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1571B10023352450004AA911 /* Localizable.strings */; };
 		1572D71223313E7400CFBA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D71123313E7400CFBA6F /* AppDelegate.swift */; };
 		1572D71423313E7400CFBA6F /* TopHeadlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D71323313E7400CFBA6F /* TopHeadlinesViewController.swift */; };
 		1572D71923313E7600CFBA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1572D71823313E7600CFBA6F /* Assets.xcassets */; };
@@ -123,6 +125,8 @@
 		1571B0EF2335221E004AA911 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		1571B0F02335221E004AA911 /* AuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
 		1571B0F523352340004AA911 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		1571B0F923352411004AA911 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		1571B0FF23352450004AA911 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019 PT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CriticalTechWorks 2019 PT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1572D71123313E7400CFBA6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1572D71323313E7400CFBA6F /* TopHeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +240,7 @@
 		1571B0ED233520A9004AA911 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1571B10023352450004AA911 /* Localizable.strings */,
 				1572D71823313E7600CFBA6F /* Assets.xcassets */,
 				1572D71A23313E7600CFBA6F /* LaunchScreen.storyboard */,
 				1572D71D23313E7600CFBA6F /* Info_PT.plist */,
@@ -565,6 +570,7 @@
 				1571B0F42335221E004AA911 /* AuthenticationViewController.xib in Resources */,
 				1571B0D823350A0F004AA911 /* HeadlineViewController.xib in Resources */,
 				1571B0D923350A0F004AA911 /* LaunchScreen.storyboard in Resources */,
+				1571B0FE23352450004AA911 /* Localizable.strings in Resources */,
 				1571B0EC23351DF6004AA911 /* Info_US.plist in Resources */,
 				1571B0DA23350A0F004AA911 /* HeadlineTableViewCell.xib in Resources */,
 				1571B0DB23350A0F004AA911 /* Assets.xcassets in Resources */,
@@ -578,6 +584,7 @@
 				1571B0F32335221E004AA911 /* AuthenticationViewController.xib in Resources */,
 				1571B0EB23351DF3004AA911 /* Info_PT.plist in Resources */,
 				15263C1123338BAC009F1E09 /* HeadlineViewController.xib in Resources */,
+				1571B0FD23352450004AA911 /* Localizable.strings in Resources */,
 				1572D71C23313E7600CFBA6F /* LaunchScreen.storyboard in Resources */,
 				1572D752233148CA00CFBA6F /* HeadlineTableViewCell.xib in Resources */,
 				1572D71923313E7600CFBA6F /* Assets.xcassets in Resources */,
@@ -831,10 +838,19 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1571B10023352450004AA911 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1571B0FF23352450004AA911 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		1572D71A23313E7600CFBA6F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1572D71B23313E7600CFBA6F /* Base */,
+				1571B0F923352411004AA911 /* pt-PT */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -886,6 +902,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -947,6 +964,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -33,11 +33,9 @@ class HeadlineViewController: UIViewController {
     
     private func setupButtonTitle() {
         if article.isSaved {
-            print("Remove from Favorites")
-            self.favouritesButton.setTitle("Remove from Favorites", for: .normal)
+            self.favouritesButton.setTitle("favorites.button.title.remove".localized, for: .normal)
         } else {
-            print("Save to Favorites")
-            self.favouritesButton.setTitle("Save to Favorites", for: .normal)
+            self.favouritesButton.setTitle("favorites.button.title.save".localized, for: .normal)
         }
     }
 
@@ -56,22 +54,5 @@ class HeadlineViewController: UIViewController {
             }
         }
     }
-    
-//    func saveArticle() {
-//        let container = try! Container()
-//        try! container.write { transaction in
-//            transaction.add(article)
-//            
-//            setupButtonTitle()
-//        }
-//    }
-//    
-//    func deleteArticle() {
-//        let container = try! Container()
-//        try! container.write { transaction in
-//            transaction.delete(article)
-//            
-//            setupButtonTitle()
-//        }
-//    }
+
 }
