@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1572D70D23313E7400CFBA6F"
-               BuildableName = "CriticalTechWorks 2019.app"
-               BlueprintName = "CriticalTechWorks 2019"
+               BlueprintIdentifier = "1571B0B823350A0F004AA911"
+               BuildableName = "CriticalTechWorks 2019 US.app"
+               BlueprintName = "CriticalTechWorks 2019 US"
                ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,36 +26,15 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "15FDC26623322E3A00AC7092"
-               BuildableName = "CriticalTechWorks 2019SlowTests.xctest"
-               BlueprintName = "CriticalTechWorks 2019SlowTests"
-               ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "15FDC2742332314C00AC7092"
-               BuildableName = "CriticalTechWorks 2019FakeTests.xctest"
-               BlueprintName = "CriticalTechWorks 2019FakeTests"
-               ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1572D70D23313E7400CFBA6F"
-            BuildableName = "CriticalTechWorks 2019.app"
-            BlueprintName = "CriticalTechWorks 2019"
+            BlueprintIdentifier = "1571B0B823350A0F004AA911"
+            BuildableName = "CriticalTechWorks 2019 US.app"
+            BlueprintName = "CriticalTechWorks 2019 US"
             ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1572D70D23313E7400CFBA6F"
-            BuildableName = "CriticalTechWorks 2019.app"
-            BlueprintName = "CriticalTechWorks 2019"
+            BlueprintIdentifier = "1571B0B823350A0F004AA911"
+            BuildableName = "CriticalTechWorks 2019 US.app"
+            BlueprintName = "CriticalTechWorks 2019 US"
             ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -95,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1572D70D23313E7400CFBA6F"
-            BuildableName = "CriticalTechWorks 2019.app"
-            BlueprintName = "CriticalTechWorks 2019"
+            BlueprintIdentifier = "1571B0B823350A0F004AA911"
+            BuildableName = "CriticalTechWorks 2019 US.app"
+            BlueprintName = "CriticalTechWorks 2019 US"
             ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

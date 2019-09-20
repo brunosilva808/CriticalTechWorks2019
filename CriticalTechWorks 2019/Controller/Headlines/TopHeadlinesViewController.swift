@@ -16,10 +16,8 @@ class TopHeadlinesViewController: BaseHeadlinesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "Top Headlines in " + NSLocale().getCountryCode()
-        
+        self.title = "Top Headlines in " + Environment.sources.value
         getTopHeadlines()
-
         setupBarButton()
     }
 
@@ -32,9 +30,8 @@ class TopHeadlinesViewController: BaseHeadlinesViewController {
     }
     
     func getTopHeadlines() {
-        let countryCode = NSLocale().getCountryCode()
         sessionProvider.request(type: News.self,
-                                service: NewsService.headlines(countryCode: countryCode)) { [weak self] (response) in
+                                service: NewsService.headlines(countryCode: Environment.sources.value)) { [weak self] (response) in
                                     switch response {
                                     case let .success(news):
                                         DispatchQueue.main.async {
