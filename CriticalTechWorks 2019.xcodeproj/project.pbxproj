@@ -112,7 +112,6 @@
 		155AA98E2334E57B0036F37F /* FavoritesHeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesHeadlinesViewController.swift; sourceTree = "<group>"; };
 		155AA9902334EC2A0036F37F /* BaseHeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHeadlinesViewController.swift; sourceTree = "<group>"; };
 		1571B0E023350A0F004AA911 /* CriticalTechWorks 2019 US.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CriticalTechWorks 2019 US.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1571B0E123350A0F004AA911 /* CriticalTechWorks 2019 Language copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CriticalTechWorks 2019 Language copy-Info.plist"; path = "/Users/bruno/Projects/CriticalTechWorks2019/CriticalTechWorks 2019 Language copy-Info.plist"; sourceTree = "<absolute>"; };
 		1571B0E223350CE3004AA911 /* Info_US.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_US.plist; sourceTree = "<group>"; };
 		1571B0E62335131E004AA911 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019 PT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CriticalTechWorks 2019 PT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +224,25 @@
 			path = Headlines;
 			sourceTree = "<group>";
 		};
+		1571B0ED233520A9004AA911 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1572D71823313E7600CFBA6F /* Assets.xcassets */,
+				1572D71A23313E7600CFBA6F /* LaunchScreen.storyboard */,
+				1572D71D23313E7600CFBA6F /* Info_PT.plist */,
+				1571B0E223350CE3004AA911 /* Info_US.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1571B0EE233520C0004AA911 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1571B0E62335131E004AA911 /* Environment.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		1572D70523313E7400CFBA6F = {
 			isa = PBXGroup;
 			children = (
@@ -234,7 +252,6 @@
 				1572D70F23313E7400CFBA6F /* Products */,
 				E55578989032A7449D018136 /* Pods */,
 				3CFA73C8ABCB6B05FD48B7F8 /* Frameworks */,
-				1571B0E123350A0F004AA911 /* CriticalTechWorks 2019 Language copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -258,11 +275,8 @@
 				1572D74E2331412F00CFBA6F /* Controller */,
 				1572D72523313EA400CFBA6F /* Networking */,
 				15263C14233396BC009F1E09 /* Persistence */,
-				1572D71823313E7600CFBA6F /* Assets.xcassets */,
-				1572D71A23313E7600CFBA6F /* LaunchScreen.storyboard */,
-				1571B0E62335131E004AA911 /* Environment.swift */,
-				1572D71D23313E7600CFBA6F /* Info_PT.plist */,
-				1571B0E223350CE3004AA911 /* Info_US.plist */,
+				1571B0EE233520C0004AA911 /* Utils */,
+				1571B0ED233520A9004AA911 /* Resources */,
 			);
 			path = "CriticalTechWorks 2019";
 			sourceTree = "<group>";
@@ -809,7 +823,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CEWUHN7W92;
-				INFOPLIST_FILE = "CriticalTechWorks 2019/Info_US.plist";
+				INFOPLIST_FILE = "CriticalTechWorks 2019/Resources/Info_US.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -829,7 +843,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CEWUHN7W92;
-				INFOPLIST_FILE = "CriticalTechWorks 2019/Info_US.plist";
+				INFOPLIST_FILE = "CriticalTechWorks 2019/Resources/Info_US.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -965,7 +979,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CEWUHN7W92;
-				INFOPLIST_FILE = "CriticalTechWorks 2019/Info_PT.plist";
+				INFOPLIST_FILE = "CriticalTechWorks 2019/Resources/Info_PT.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -985,7 +999,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CEWUHN7W92;
-				INFOPLIST_FILE = "CriticalTechWorks 2019/Info_PT.plist";
+				INFOPLIST_FILE = "CriticalTechWorks 2019/Resources/Info_PT.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
