@@ -11,7 +11,7 @@ import XCTest
 
 class TopHeadlinesViewControllerTests: XCTestCase {
 
-    var sut: TopHeadlinesViewController!
+    var sut: NewsViewController!
     var window: UIWindow!
 
 //    override func setUp() {
@@ -42,7 +42,7 @@ class TopHeadlinesViewControllerTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        sut = TopHeadlinesViewController()
+        sut = NewsViewController()
     }
     
     override func tearDown() {
