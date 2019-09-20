@@ -16,6 +16,15 @@ struct Article: Codable {
     let urlToImage: String?
     let publishedAt: String
     let content: String?
+    var isSaved: Bool { 
+        let container = try! Container()
+        let results = container.values(
+            Article.self,
+            matching: .url("\(self.url)")
+        )
+        
+        return results.count == 0 ? false : true
+    }
 
     enum CodingKeys: String, CodingKey {
         case title
@@ -24,16 +33,6 @@ struct Article: Codable {
         case content
         case urlToImage
         case url
-    }
-    
-    func isSaved() -> Bool {
-        let container = try! Container()
-        let results = container.values(
-            Article.self,
-            matching: .url("\(self.url)")
-        )
-
-        return results.count == 0 ? false : true
     }
     
     mutating func save(completed: @escaping (() -> Void) ) {
@@ -60,10 +59,6 @@ struct Article: Codable {
                 try! container.write { transaction in
                     objectsToDelete.results.forEach { transaction.delete($0) }
                     completed()
-//                    if let article = objectsToDelete.results.first {
-//                        transaction.delete(article)
-//                        completed()
-//                    }
                 }
             }
         }
