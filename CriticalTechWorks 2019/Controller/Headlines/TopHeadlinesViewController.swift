@@ -8,11 +8,9 @@
 
 import UIKit
 
-class TopHeadlinesViewController: UITableViewController {
+class TopHeadlinesViewController: BaseHeadlinesViewController {
     
-    private var articles: [Article]?
     private let sessionProvider = URLSessionProvider()
-    private var headlineViewController: HeadlineViewController!
     private var favoritesViewController: FavoritesHeadlinesViewController!
     
     override func viewDidLoad() {
@@ -21,8 +19,7 @@ class TopHeadlinesViewController: UITableViewController {
         self.title = "Top Headlines in " + NSLocale().getCountryCode()
         
         getTopHeadlines()
-        
-        setupTableView()
+
         setupBarButton()
     }
 
@@ -32,14 +29,6 @@ class TopHeadlinesViewController: UITableViewController {
                                       target: self,
                                       action: #selector(rightBarButtonPressed))
         self.navigationItem.rightBarButtonItem  = button
-    }
-    
-    private func setupTableView() {
-        tableView.alpha = 1.0
-        tableView.register(UINib(nibName: HeadlineTableViewCell.nibName, bundle: nil),
-                                 forCellReuseIdentifier: HeadlineTableViewCell.cellIdentifier)
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 250
     }
     
     func getTopHeadlines() {
@@ -66,27 +55,4 @@ class TopHeadlinesViewController: UITableViewController {
         navigationController?.pushViewController(favoritesViewController, animated: true)
     }
     
-}
-
-extension TopHeadlinesViewController {
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return articles?.count ?? 0
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: HeadlineTableViewCell.cellIdentifier, for: indexPath)
-            as! HeadlineTableViewCell
-
-        if let article = articles?[indexPath.row] {
-            cell.setup(article: article)
-        }
-        return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        headlineViewController = HeadlineViewController()
-        headlineViewController.article = articles?[indexPath.row]
-        self.navigationController?.pushViewController(headlineViewController, animated: true)
-    }
 }

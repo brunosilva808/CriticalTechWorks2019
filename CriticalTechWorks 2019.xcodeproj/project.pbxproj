@@ -189,9 +189,9 @@
 		155AA9922334ECF70036F37F /* Headlines */ = {
 			isa = PBXGroup;
 			children = (
+				155AA9902334EC2A0036F37F /* BaseHeadlinesViewController.swift */,
 				1572D71323313E7400CFBA6F /* TopHeadlinesViewController.swift */,
 				155AA98E2334E57B0036F37F /* FavoritesHeadlinesViewController.swift */,
-				155AA9902334EC2A0036F37F /* BaseHeadlinesViewController.swift */,
 			);
 			path = Headlines;
 			sourceTree = "<group>";
