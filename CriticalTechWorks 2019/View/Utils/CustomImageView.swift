@@ -8,12 +8,14 @@
 
 import UIKit
 
+typealias SimpleCallBack = () -> Void
+
 class CustomImageView: UIImageView {
     
     let imageCache = NSCache<NSString, UIImage>()
     var imageUrlString: String?
     
-    func downloadImage(from urlString: String) {
+    func downloadImage(from urlString: String, onComplete: @escaping SimpleCallBack = {}) {
         
         imageUrlString = urlString
         self.image = nil
@@ -42,6 +44,7 @@ class CustomImageView: UIImageView {
                         }
                         
                         self?.imageCache.setObject(imageToCache, forKey: urlString as NSString)
+                        onComplete()
                     }
                 }
             }.resume()

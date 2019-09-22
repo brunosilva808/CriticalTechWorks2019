@@ -19,10 +19,6 @@ final class PersistanceTransaction {
         realm.add(value.managedObject(), update: update)
     }
     
-    func delete<T: Persistable>(_ value: T) {
-        realm.delete(value.managedObject())
-    }
-    
     func delete(_ value: RealmSwift.Object) {
         realm.delete(value)
     }
@@ -45,7 +41,6 @@ final class Container {
         } else {
             self.realm = realm
         }
-        
     }
     
     public func write(_ block: (PersistanceTransaction) throws -> Void)

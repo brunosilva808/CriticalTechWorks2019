@@ -71,7 +71,7 @@ class TopHeadlinesAPITests: XCTestCase {
 //        XCTAssertNotNil(responseError)
 //    }
     
-    func testTopHeadlinesAPIRequestWithMockingjayErrorUknown() {
+    func testTopHeadlines_APIRequest_WithMockingjay_ErrorUknown() {
         // given
         let service = NewsService.headlines(countryCode: Environment.sources.value)
         let typeObject = Article.self
@@ -101,7 +101,7 @@ class TopHeadlinesAPITests: XCTestCase {
         XCTAssertNotNil(responseError, "Top Headlines APIRequestWithMockingjayErrorUknown failed")
     }
     
-    func testTopHeadlinesAPIRequestWithMockingjaySuccess() {
+    func testTopHeadlines_APIRequest_WithMockingjay_Success() {
         // given
         let service = NewsService.headlines(countryCode: Environment.sources.value)
         let typeObject = News.self

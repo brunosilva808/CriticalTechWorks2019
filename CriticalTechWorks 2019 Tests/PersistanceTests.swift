@@ -13,49 +13,144 @@ import RealmSwift
 class PersistanceTests: XCTestCase {
 
     var sut1: Article!
-    var sut2: Article!
     
     override func setUp() {
         super.setUp()
         
-        sut1 = Article(title: "title 1", articleDescription: "description 1", url: "url 1", urlToImage: "urlToImage1", publishedAt: "published 1", content: "content 1")
-        sut2 = Article(title: "title 2", articleDescription: "description 2", url: "url 2", urlToImage: "urlToImage2", publishedAt: "published 2", content: "content 2")
+        sut1 = Article(title: "title 1",
+                       articleDescription: "description 1",
+                       url: "url 1",
+                       urlToImage: "urlToImage1",
+                       publishedAt: "published 1",
+                       content: "content 1")
         
-//        let container = try! Container()
-//        try! container.write { transaction in
-//            transaction.deleteAll()
-//        }
+        let container = try! Container()
+        try! container.write { transaction in
+            transaction.deleteAll()
+        }
     }
 
     override func tearDown() {
         sut1 = nil
-        sut2 = nil
         super.tearDown()
     }
 
-    func testSaveArticle() {
+    func testSaveArticle_Success() {
+        // when
+        sut1.save { [weak self] in
+
+            let container = try! Container()
+            guard let url = self?.sut1.url else { return }
+            let object = container.values(
+                Article.self,
+                matching: .url(url)
+            )
+
+            // then
+            XCTAssertEqual(object.results.count, 1, "Object was saved")
+            XCTAssertEqual(object.results.first?.url, self?.sut1.url, "Object url is not the same")
+        }
+    }
+    
+    func testDeleteArticle_Success() {
         // given
+        sut1.save { [weak self] in
+            
+            let container = try! Container()
+            guard let url = self?.sut1.url else { return }
+            let object = container.values(
+                Article.self,
+                matching: .url(url)
+            )
+            
+            XCTAssertEqual(object.results.first?.url, self?.sut1.url, "Objects was not saved")
+        }
+
         let container = try! Container()
-        let object = container.values(
+        let objects = container.values(
             Article.self,
             matching: .url("\(sut1.url)")
         )
-        
-        print(object)
-        print(object.results)
+        XCTAssertEqual(objects.results.count, 1, "Objects saved should be 1")
 
-//        // when
-//        sut1.save { [weak self] in
-//
-//            let container = try! Container()
-//            let object = container.values(
-//                Article.self,
-//                matching: .url("\(self?.sut1.url)")
-//            )
-//
-//            // then
-//            XCTAssertNotEqual(object.results.first, self?.sut1.managedObject())
-//        }
+        // when
+        sut1.delete {
+            let container = try! Container()
+            let objects = container.values(
+                Article.self,
+                matching: .url("\(self.sut1.url)")
+            )
+            
+            // then
+            XCTAssertEqual(objects.results.count, 0, "Objects saved should be 0")
+        }
+    }
+    
+    func testArticleisSaved_Success() {
+        //given
+        sut1.save { [weak self] in
+            // then
+            XCTAssertTrue(self?.sut1.isSaved ?? false, "Object was not saved")
+        }
     }
 
+    func testArticleisNotSaved_Success() {
+        //given
+        sut1.save { [weak self] in
+            
+            let container = try! Container()
+            guard let url = self?.sut1.url else { return }
+            let object = container.values(
+                Article.self,
+                matching: .url(url)
+            )
+            
+            XCTAssertEqual(object.results.first?.url, self?.sut1.url, "Object was not saved")
+        }
+        
+        XCTAssertTrue(sut1.isSaved, "Object was not saved")
+        
+        // when
+        sut1.delete {
+            let container = try! Container()
+            let objects = container.values(
+                Article.self,
+                matching: .url("\(self.sut1.url)")
+            )
+            
+            XCTAssertEqual(objects.results.count, 0, "Objects saved should be 0")
+        }
+        
+        // then
+        XCTAssertFalse(sut1.isSaved, "Object should have been deleted saved")
+    }
+    
+    func testArticleConversionToManagedObject_Success() {
+        // given
+        let managedObject = sut1.managedObject()
+        
+        // when
+        let articleManagedObject = Article(managedObject: managedObject)
+        
+        // then
+        XCTAssertEqual(sut1!.url, articleManagedObject.url)
+    }
+    
+    func testArticleValue_Success() {
+        //given
+        sut1.save { [weak self] in
+            
+            let container = try! Container()
+            guard let url = self?.sut1.url else { return }
+            let object = container.values(
+                Article.self,
+                matching: .url(url)
+            )
+            
+            XCTAssertEqual(object.value(at: 0).url, self?.sut1.url, "Object was not saved")
+        }
+        
+        XCTAssertTrue(sut1.isSaved, "Object was not saved")
+    }
+    
 }
