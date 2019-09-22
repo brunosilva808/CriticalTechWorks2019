@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023DD5184338EA22AB49C4CC /* Pods_CriticalTechWorks_2019_US.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455E7EE109753F555A789818 /* Pods_CriticalTechWorks_2019_US.framework */; };
 		151025082331569400603F55 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151025072331569400603F55 /* CustomImageView.swift */; };
 		15263C1023338BAC009F1E09 /* HeadlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15263C0E23338BAC009F1E09 /* HeadlineViewController.swift */; };
 		15263C1123338BAC009F1E09 /* HeadlineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15263C0F23338BAC009F1E09 /* HeadlineViewController.xib */; };
@@ -75,9 +76,10 @@
 		1572D752233148CA00CFBA6F /* HeadlineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1572D750233148CA00CFBA6F /* HeadlineTableViewCell.xib */; };
 		1593CAA72337BA0D000E65D3 /* TopHeadlinesAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1593CAA62337BA0D000E65D3 /* TopHeadlinesAPITests.swift */; };
 		1593CAAF2337BC79000E65D3 /* top_headlines.json in Resources */ = {isa = PBXBuildFile; fileRef = 1593CAAE2337BC79000E65D3 /* top_headlines.json */; };
-		500C5F1B8F44F79911BD2991 /* Pods_CriticalTechWorks_2019_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1BA6C932557D4DE223DDEB /* Pods_CriticalTechWorks_2019_Tests.framework */; };
-		5F84B62381BB37AA37539C96 /* Pods_CriticalTechWorks_2019_PT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70552F638F95466CB0B26438 /* Pods_CriticalTechWorks_2019_PT.framework */; };
-		8FC95E9AC2CFD1433B674C74 /* Pods_CriticalTechWorks_2019_US.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A828EF9ED25C6ED370120D69 /* Pods_CriticalTechWorks_2019_US.framework */; };
+		1593CAB12337CD5A000E65D3 /* TopHeadlinesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1593CAB02337CD5A000E65D3 /* TopHeadlinesViewControllerTests.swift */; };
+		1593CAB32337CF4F000E65D3 /* PersistanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1593CAB22337CF4F000E65D3 /* PersistanceTests.swift */; };
+		15B5555B4906B9A770AF8ED5 /* Pods_CriticalTechWorks_2019_PT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452B8DFD317D618157FE415B /* Pods_CriticalTechWorks_2019_PT.framework */; };
+		A79819EEA84EE4524E5C3BA9 /* Pods_CriticalTechWorks_2019_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97921BC6F657118487106FA3 /* Pods_CriticalTechWorks_2019_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,11 +134,15 @@
 		1593CAA62337BA0D000E65D3 /* TopHeadlinesAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesAPITests.swift; sourceTree = "<group>"; };
 		1593CAA82337BA0D000E65D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1593CAAE2337BC79000E65D3 /* top_headlines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_headlines.json; sourceTree = "<group>"; };
+		1593CAB02337CD5A000E65D3 /* TopHeadlinesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesViewControllerTests.swift; sourceTree = "<group>"; };
+		1593CAB22337CF4F000E65D3 /* PersistanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceTests.swift; sourceTree = "<group>"; };
+		15C536412337DA6000379025 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15C536432337DA6000379025 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9AEB2C4DED628E9663A0B2 /* Pods-CriticalTechWorks 2019 US.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 US.release.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US.release.xcconfig"; sourceTree = "<group>"; };
-		70552F638F95466CB0B26438 /* Pods_CriticalTechWorks_2019_PT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_PT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E1BA6C932557D4DE223DDEB /* Pods_CriticalTechWorks_2019_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		452B8DFD317D618157FE415B /* Pods_CriticalTechWorks_2019_PT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_PT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		455E7EE109753F555A789818 /* Pods_CriticalTechWorks_2019_US.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_US.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8834FEB6E1F63D2DFE44856D /* Pods-CriticalTechWorks 2019 PT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 PT.release.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT.release.xcconfig"; sourceTree = "<group>"; };
-		A828EF9ED25C6ED370120D69 /* Pods_CriticalTechWorks_2019_US.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_US.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97921BC6F657118487106FA3 /* Pods_CriticalTechWorks_2019_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6793BD1C30BA85251F4B75 /* Pods-CriticalTechWorks 2019 PT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 PT.debug.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT.debug.xcconfig"; sourceTree = "<group>"; };
 		B19DCEE80A5FED4A491233B1 /* Pods-CriticalTechWorks 2019 Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 Tests.debug.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 Tests/Pods-CriticalTechWorks 2019 Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C09500AA4DAF4D2410382FA4 /* Pods-CriticalTechWorks 2019 US.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 US.debug.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,7 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FC95E9AC2CFD1433B674C74 /* Pods_CriticalTechWorks_2019_US.framework in Frameworks */,
+				023DD5184338EA22AB49C4CC /* Pods_CriticalTechWorks_2019_US.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F84B62381BB37AA37539C96 /* Pods_CriticalTechWorks_2019_PT.framework in Frameworks */,
+				15B5555B4906B9A770AF8ED5 /* Pods_CriticalTechWorks_2019_PT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				500C5F1B8F44F79911BD2991 /* Pods_CriticalTechWorks_2019_Tests.framework in Frameworks */,
+				A79819EEA84EE4524E5C3BA9 /* Pods_CriticalTechWorks_2019_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +371,8 @@
 			isa = PBXGroup;
 			children = (
 				1593CAA62337BA0D000E65D3 /* TopHeadlinesAPITests.swift */,
+				1593CAB02337CD5A000E65D3 /* TopHeadlinesViewControllerTests.swift */,
+				1593CAB22337CF4F000E65D3 /* PersistanceTests.swift */,
 				1593CAAE2337BC79000E65D3 /* top_headlines.json */,
 				1593CAA82337BA0D000E65D3 /* Info.plist */,
 			);
@@ -374,9 +382,11 @@
 		3CFA73C8ABCB6B05FD48B7F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A828EF9ED25C6ED370120D69 /* Pods_CriticalTechWorks_2019_US.framework */,
-				70552F638F95466CB0B26438 /* Pods_CriticalTechWorks_2019_PT.framework */,
-				7E1BA6C932557D4DE223DDEB /* Pods_CriticalTechWorks_2019_Tests.framework */,
+				15C536412337DA6000379025 /* Realm.framework */,
+				15C536432337DA6000379025 /* RealmSwift.framework */,
+				452B8DFD317D618157FE415B /* Pods_CriticalTechWorks_2019_PT.framework */,
+				97921BC6F657118487106FA3 /* Pods_CriticalTechWorks_2019_Tests.framework */,
+				455E7EE109753F555A789818 /* Pods_CriticalTechWorks_2019_US.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -405,7 +415,7 @@
 				1571B0BA23350A0F004AA911 /* Sources */,
 				1571B0D523350A0F004AA911 /* Frameworks */,
 				1571B0D723350A0F004AA911 /* Resources */,
-				1571B0DC23350A0F004AA911 /* [CP] Embed Pods Frameworks */,
+				E40385A7D3AF9E06533143AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -424,7 +434,7 @@
 				1572D70A23313E7400CFBA6F /* Sources */,
 				1572D70B23313E7400CFBA6F /* Frameworks */,
 				1572D70C23313E7400CFBA6F /* Resources */,
-				F389EC260BA3330A86AE4FDB /* [CP] Embed Pods Frameworks */,
+				8ECF069D0EB1955CB38AA00A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -443,7 +453,7 @@
 				1593CAA02337BA0D000E65D3 /* Sources */,
 				1593CAA12337BA0D000E65D3 /* Frameworks */,
 				1593CAA22337BA0D000E65D3 /* Resources */,
-				36930FF6455395EFC2D02E51 /* [CP] Embed Pods Frameworks */,
+				686937D81D9EAD6512A452DD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -554,23 +564,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1571B0DC23350A0F004AA911 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		29606A64C670276CD5268AF3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -593,7 +586,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		36930FF6455395EFC2D02E51 /* [CP] Embed Pods Frameworks */ = {
+		686937D81D9EAD6512A452DD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -608,6 +601,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 Tests/Pods-CriticalTechWorks 2019 Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ECF069D0EB1955CB38AA00A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8F1D4000247AD9ED644AA86D /* [CP] Check Pods Manifest.lock */ = {
@@ -632,21 +642,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F389EC260BA3330A86AE4FDB /* [CP] Embed Pods Frameworks */ = {
+		E40385A7D3AF9E06533143AF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -724,6 +734,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1593CAB12337CD5A000E65D3 /* TopHeadlinesViewControllerTests.swift in Sources */,
+				1593CAB32337CF4F000E65D3 /* PersistanceTests.swift in Sources */,
 				1593CAA72337BA0D000E65D3 /* TopHeadlinesAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -969,6 +981,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				PODS_PODFILE_DIR_PATH = "${SRCROOT}/.";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -989,6 +1002,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				PODS_PODFILE_DIR_PATH = "${SRCROOT}/.";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

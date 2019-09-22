@@ -98,7 +98,7 @@ class TopHeadlinesAPITests: XCTestCase {
         wait(for: [promise], timeout: 5)
         
         // then
-        XCTAssertNotNil(responseError)
+        XCTAssertNotNil(responseError, "Top Headlines APIRequestWithMockingjayErrorUknown failed")
     }
     
     func testTopHeadlinesAPIRequestWithMockingjaySuccess() {
@@ -128,7 +128,7 @@ class TopHeadlinesAPITests: XCTestCase {
         wait(for: [promise], timeout: 5)
         
         // then
-        XCTAssertNotNil(responseNews)
+        XCTAssertNotNil(responseNews, "Top Headlines APIRequestWithMockingjaySuccess failed")
     }
 
 }

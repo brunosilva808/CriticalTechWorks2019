@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-public final class WriteTransaction {
+final class PersistanceTransaction {
     private let realm: Realm
     
     internal init(realm: Realm) {
@@ -17,7 +17,6 @@ public final class WriteTransaction {
     
     public func add<T: Persistable>(_ value: T, update: Bool = false) {
         realm.add(value.managedObject(), update: update)
-        print("Realm save")
     }
     
     func delete<T: Persistable>(_ value: T) {
@@ -26,11 +25,14 @@ public final class WriteTransaction {
     
     func delete(_ value: RealmSwift.Object) {
         realm.delete(value)
-        print("Realm delete")
+    }
+    
+    func deleteAll() {
+        realm.deleteAll()
     }
 }
 
-public final class Container {
+final class Container {
     private let realm: Realm
     
     public convenience init() throws {
@@ -38,12 +40,17 @@ public final class Container {
     }
     
     internal init(realm: Realm) {
-        self.realm = realm
+        if let _ = NSClassFromString("XCTest") {
+            self.realm = try! Realm(configuration: Realm.Configuration(fileURL: nil, inMemoryIdentifier: "test", encryptionKey: nil, readOnly: false, schemaVersion: 0, migrationBlock: nil, objectTypes: nil))
+        } else {
+            self.realm = realm
+        }
+        
     }
     
-    public func write(_ block: (WriteTransaction) throws -> Void)
+    public func write(_ block: (PersistanceTransaction) throws -> Void)
         throws {
-            let transaction = WriteTransaction(realm: realm)
+            let transaction = PersistanceTransaction(realm: realm)
             try realm.write {
                 try block(transaction)
             }

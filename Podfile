@@ -1,7 +1,7 @@
 platform :ios, '12.1'
 use_frameworks!
-# ignore all warnings from all pods
 inhibit_all_warnings!
+use_modular_headers!
 
 def criticalTechWorks_pods 
   pod 'RealmSwift'
@@ -17,4 +17,5 @@ end
 
 target 'CriticalTechWorks 2019 Tests' do
 	pod 'Mockingjay'
+	criticalTechWorks_pods
 end
