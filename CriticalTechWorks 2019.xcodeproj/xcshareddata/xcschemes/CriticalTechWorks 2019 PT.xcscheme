@@ -33,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "15FE259E2337A83000C37E6F"
-               BuildableName = "CriticalTechWorks 2019 PT Tests.xctest"
-               BlueprintName = "CriticalTechWorks 2019 PT Tests"
+               BlueprintIdentifier = "1593CAA32337BA0D000E65D3"
+               BuildableName = "CriticalTechWorks 2019 Tests.xctest"
+               BlueprintName = "CriticalTechWorks 2019 Tests"
                ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
             </BuildableReference>
          </TestableReference>

@@ -1,21 +1,16 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '12.1'
+use_frameworks!
+# ignore all warnings from all pods
+inhibit_all_warnings!
 
-target 'CriticalTechWorks 2019' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for CriticalTechWorks 2019
+def criticalTechWorks_pods 
   pod 'RealmSwift'
+end
 
-  target 'CriticalTechWorks 2019FakeTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+target 'CriticalTechWorks 2019 PT' do
+	criticalTechWorks_pods
+end
 
-  target 'CriticalTechWorks 2019SlowTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+target 'CriticalTechWorks 2019 US' do
+  	criticalTechWorks_pods
 end
