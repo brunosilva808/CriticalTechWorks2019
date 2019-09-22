@@ -13,7 +13,7 @@ class FavoritesHeadlinesViewController: BaseHeadlinesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "Favorites"
+        self.title = "favorites.title".localized
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  CriticalTechWorks 2019
+
+  Created by Bruno on 20/09/2019.
+  Copyright © 2019 Bruno. All rights reserved.
+*/
+
+
+// TOP_HEADLINES
+"TopHeadlines.title" = "Top Headlines in ";
+
+// FAVORITES
+"favorites.title" = "Favorites";
+"favorites.button.title.save" = "Save to Favorites";
+"favorites.button.title.remove" = "Remove from Favorites";
+"favorites.button.title.favorites" = "Go to Favorites";
