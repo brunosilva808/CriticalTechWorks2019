@@ -23,53 +23,53 @@ class TopHeadlinesAPITests: XCTestCase {
         super.tearDown()
     }
     
-    func testTopHeadlinesAPIRequestSuccess() {
-        // given
-        let service = NewsService.headlines(countryCode: Environment.sources.value)
-        let type = News.self
-        var responseNews: News?
-        let promise = expectation(description: "Completion handler invoked")
-        
-        // when
-        sessionProvider.request(type: type, service: service, completion: { (response) in
-            switch response {
-            case let .success(news):
-                responseNews = news
-            case .failure(_):
-                break
-            }
-            
-            promise.fulfill()
-        })
-        wait(for: [promise], timeout: 5)
-        
-        // then
-        XCTAssertNotNil(responseNews)
-    }
-    
-    func testTopHeadlinesAPIRequestErrorUnknown() {
-        // given
-        let service = NewsService.headlines(countryCode: Environment.sources.value)
-        let type = News.self
-        var responseError: NetworkError?
-        let promise = expectation(description: "Completion handler invoked")
-        
-        // when
-        sessionProvider.request(type: type, service: service, completion: { (response) in
-            switch response {
-            case .success(_):
-                break
-            case let .failure(error):
-                responseError = error
-            }
-            
-            promise.fulfill()
-        })
-        wait(for: [promise], timeout: 5)
-        
-        // then
-        XCTAssertNotNil(responseError)
-    }
+//    func testTopHeadlinesAPIRequestSuccess() {
+//        // given
+//        let service = NewsService.headlines(countryCode: Environment.sources.value)
+//        let type = News.self
+//        var responseNews: News?
+//        let promise = expectation(description: "Completion handler invoked")
+//        
+//        // when
+//        sessionProvider.request(type: type, service: service, completion: { (response) in
+//            switch response {
+//            case let .success(news):
+//                responseNews = news
+//            case .failure(_):
+//                break
+//            }
+//            
+//            promise.fulfill()
+//        })
+//        wait(for: [promise], timeout: 5)
+//        
+//        // then
+//        XCTAssertNotNil(responseNews)
+//    }
+//    
+//    func testTopHeadlinesAPIRequestErrorUnknown() {
+//        // given
+//        let service = NewsService.headlines(countryCode: Environment.sources.value)
+//        let type = News.self
+//        var responseError: NetworkError?
+//        let promise = expectation(description: "Completion handler invoked")
+//        
+//        // when
+//        sessionProvider.request(type: type, service: service, completion: { (response) in
+//            switch response {
+//            case .success(_):
+//                break
+//            case let .failure(error):
+//                responseError = error
+//            }
+//            
+//            promise.fulfill()
+//        })
+//        wait(for: [promise], timeout: 5)
+//        
+//        // then
+//        XCTAssertNotNil(responseError)
+//    }
     
     func testTopHeadlinesAPIRequestWithMockingjayErrorUknown() {
         // given
