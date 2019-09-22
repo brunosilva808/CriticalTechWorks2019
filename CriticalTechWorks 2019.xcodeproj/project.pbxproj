@@ -73,7 +73,9 @@
 		1572D74C23313EDD00CFBA6F /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D74723313EDD00CFBA6F /* News.swift */; };
 		1572D751233148CA00CFBA6F /* HeadlineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D74F233148CA00CFBA6F /* HeadlineTableViewCell.swift */; };
 		1572D752233148CA00CFBA6F /* HeadlineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1572D750233148CA00CFBA6F /* HeadlineTableViewCell.xib */; };
-		1593CAA72337BA0D000E65D3 /* CriticalTechWorks_2019_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1593CAA62337BA0D000E65D3 /* CriticalTechWorks_2019_Tests.swift */; };
+		1593CAA72337BA0D000E65D3 /* TopHeadlinesAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1593CAA62337BA0D000E65D3 /* TopHeadlinesAPITests.swift */; };
+		1593CAAF2337BC79000E65D3 /* top_headlines.json in Resources */ = {isa = PBXBuildFile; fileRef = 1593CAAE2337BC79000E65D3 /* top_headlines.json */; };
+		500C5F1B8F44F79911BD2991 /* Pods_CriticalTechWorks_2019_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1BA6C932557D4DE223DDEB /* Pods_CriticalTechWorks_2019_Tests.framework */; };
 		5F84B62381BB37AA37539C96 /* Pods_CriticalTechWorks_2019_PT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70552F638F95466CB0B26438 /* Pods_CriticalTechWorks_2019_PT.framework */; };
 		8FC95E9AC2CFD1433B674C74 /* Pods_CriticalTechWorks_2019_US.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A828EF9ED25C6ED370120D69 /* Pods_CriticalTechWorks_2019_US.framework */; };
 /* End PBXBuildFile section */
@@ -127,14 +129,18 @@
 		1572D74F233148CA00CFBA6F /* HeadlineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineTableViewCell.swift; sourceTree = "<group>"; };
 		1572D750233148CA00CFBA6F /* HeadlineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadlineTableViewCell.xib; sourceTree = "<group>"; };
 		1593CAA42337BA0D000E65D3 /* CriticalTechWorks 2019 Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CriticalTechWorks 2019 Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1593CAA62337BA0D000E65D3 /* CriticalTechWorks_2019_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticalTechWorks_2019_Tests.swift; sourceTree = "<group>"; };
+		1593CAA62337BA0D000E65D3 /* TopHeadlinesAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesAPITests.swift; sourceTree = "<group>"; };
 		1593CAA82337BA0D000E65D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1593CAAE2337BC79000E65D3 /* top_headlines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_headlines.json; sourceTree = "<group>"; };
 		2F9AEB2C4DED628E9663A0B2 /* Pods-CriticalTechWorks 2019 US.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 US.release.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US.release.xcconfig"; sourceTree = "<group>"; };
 		70552F638F95466CB0B26438 /* Pods_CriticalTechWorks_2019_PT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_PT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1BA6C932557D4DE223DDEB /* Pods_CriticalTechWorks_2019_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8834FEB6E1F63D2DFE44856D /* Pods-CriticalTechWorks 2019 PT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 PT.release.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT.release.xcconfig"; sourceTree = "<group>"; };
 		A828EF9ED25C6ED370120D69 /* Pods_CriticalTechWorks_2019_US.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_US.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6793BD1C30BA85251F4B75 /* Pods-CriticalTechWorks 2019 PT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 PT.debug.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT.debug.xcconfig"; sourceTree = "<group>"; };
+		B19DCEE80A5FED4A491233B1 /* Pods-CriticalTechWorks 2019 Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 Tests.debug.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 Tests/Pods-CriticalTechWorks 2019 Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C09500AA4DAF4D2410382FA4 /* Pods-CriticalTechWorks 2019 US.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 US.debug.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US.debug.xcconfig"; sourceTree = "<group>"; };
+		FFFB1BE0DE3012DD201B5B1D /* Pods-CriticalTechWorks 2019 Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 Tests.release.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 Tests/Pods-CriticalTechWorks 2019 Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500C5F1B8F44F79911BD2991 /* Pods_CriticalTechWorks_2019_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +364,8 @@
 		1593CAA52337BA0D000E65D3 /* CriticalTechWorks 2019 Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1593CAA62337BA0D000E65D3 /* CriticalTechWorks_2019_Tests.swift */,
+				1593CAA62337BA0D000E65D3 /* TopHeadlinesAPITests.swift */,
+				1593CAAE2337BC79000E65D3 /* top_headlines.json */,
 				1593CAA82337BA0D000E65D3 /* Info.plist */,
 			);
 			path = "CriticalTechWorks 2019 Tests";
@@ -368,6 +376,7 @@
 			children = (
 				A828EF9ED25C6ED370120D69 /* Pods_CriticalTechWorks_2019_US.framework */,
 				70552F638F95466CB0B26438 /* Pods_CriticalTechWorks_2019_PT.framework */,
+				7E1BA6C932557D4DE223DDEB /* Pods_CriticalTechWorks_2019_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -379,6 +388,8 @@
 				2F9AEB2C4DED628E9663A0B2 /* Pods-CriticalTechWorks 2019 US.release.xcconfig */,
 				AD6793BD1C30BA85251F4B75 /* Pods-CriticalTechWorks 2019 PT.debug.xcconfig */,
 				8834FEB6E1F63D2DFE44856D /* Pods-CriticalTechWorks 2019 PT.release.xcconfig */,
+				B19DCEE80A5FED4A491233B1 /* Pods-CriticalTechWorks 2019 Tests.debug.xcconfig */,
+				FFFB1BE0DE3012DD201B5B1D /* Pods-CriticalTechWorks 2019 Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -428,9 +439,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1593CAAB2337BA0D000E65D3 /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019 Tests" */;
 			buildPhases = (
+				29606A64C670276CD5268AF3 /* [CP] Check Pods Manifest.lock */,
 				1593CAA02337BA0D000E65D3 /* Sources */,
 				1593CAA12337BA0D000E65D3 /* Frameworks */,
 				1593CAA22337BA0D000E65D3 /* Resources */,
+				36930FF6455395EFC2D02E51 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -512,6 +525,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1593CAAF2337BC79000E65D3 /* top_headlines.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +569,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29606A64C670276CD5268AF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CriticalTechWorks 2019 Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36930FF6455395EFC2D02E51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 Tests/Pods-CriticalTechWorks 2019 Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 Tests/Pods-CriticalTechWorks 2019 Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 Tests/Pods-CriticalTechWorks 2019 Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8F1D4000247AD9ED644AA86D /* [CP] Check Pods Manifest.lock */ = {
@@ -671,7 +724,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1593CAA72337BA0D000E65D3 /* CriticalTechWorks_2019_Tests.swift in Sources */,
+				1593CAA72337BA0D000E65D3 /* TopHeadlinesAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,6 +959,7 @@
 		};
 		1593CAAC2337BA0D000E65D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B19DCEE80A5FED4A491233B1 /* Pods-CriticalTechWorks 2019 Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -925,6 +979,7 @@
 		};
 		1593CAAD2337BA0D000E65D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFFB1BE0DE3012DD201B5B1D /* Pods-CriticalTechWorks 2019 Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

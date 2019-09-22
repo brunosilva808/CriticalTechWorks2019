@@ -14,3 +14,7 @@ end
 target 'CriticalTechWorks 2019 US' do
   	criticalTechWorks_pods
 end
+
+target 'CriticalTechWorks 2019 Tests' do
+	pod 'Mockingjay'
+end
