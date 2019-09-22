@@ -80,6 +80,7 @@
 		1593CAB32337CF4F000E65D3 /* PersistanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1593CAB22337CF4F000E65D3 /* PersistanceTests.swift */; };
 		15B5555B4906B9A770AF8ED5 /* Pods_CriticalTechWorks_2019_PT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452B8DFD317D618157FE415B /* Pods_CriticalTechWorks_2019_PT.framework */; };
 		15C536482337ED4200379025 /* CustomImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C536472337ED4200379025 /* CustomImageViewTests.swift */; };
+		15C5364A2337FBA100379025 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15C536492337FBA100379025 /* image.jpg */; };
 		A79819EEA84EE4524E5C3BA9 /* Pods_CriticalTechWorks_2019_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97921BC6F657118487106FA3 /* Pods_CriticalTechWorks_2019_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -140,6 +141,7 @@
 		15C536412337DA6000379025 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C536432337DA6000379025 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C536472337ED4200379025 /* CustomImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageViewTests.swift; sourceTree = "<group>"; };
+		15C536492337FBA100379025 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 		2F9AEB2C4DED628E9663A0B2 /* Pods-CriticalTechWorks 2019 US.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 US.release.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US.release.xcconfig"; sourceTree = "<group>"; };
 		452B8DFD317D618157FE415B /* Pods_CriticalTechWorks_2019_PT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_PT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		455E7EE109753F555A789818 /* Pods_CriticalTechWorks_2019_US.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_US.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -376,6 +378,7 @@
 				1593CAB02337CD5A000E65D3 /* TopHeadlinesViewControllerTests.swift */,
 				1593CAB22337CF4F000E65D3 /* PersistanceTests.swift */,
 				15C536472337ED4200379025 /* CustomImageViewTests.swift */,
+				15C536492337FBA100379025 /* image.jpg */,
 				1593CAAE2337BC79000E65D3 /* top_headlines.json */,
 				1593CAA82337BA0D000E65D3 /* Info.plist */,
 			);
@@ -539,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1593CAAF2337BC79000E65D3 /* top_headlines.json in Resources */,
+				15C5364A2337FBA100379025 /* image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,58 +23,11 @@ class TopHeadlinesAPITests: XCTestCase {
         super.tearDown()
     }
     
-//    func testTopHeadlinesAPIRequestSuccess() {
-//        // given
-//        let service = NewsService.headlines(countryCode: Environment.sources.value)
-//        let type = News.self
-//        var responseNews: News?
-//        let promise = expectation(description: "Completion handler invoked")
-//        
-//        // when
-//        sessionProvider.request(type: type, service: service, completion: { (response) in
-//            switch response {
-//            case let .success(news):
-//                responseNews = news
-//            case .failure(_):
-//                break
-//            }
-//            
-//            promise.fulfill()
-//        })
-//        wait(for: [promise], timeout: 5)
-//        
-//        // then
-//        XCTAssertNotNil(responseNews)
-//    }
-//    
-//    func testTopHeadlinesAPIRequestErrorUnknown() {
-//        // given
-//        let service = NewsService.headlines(countryCode: Environment.sources.value)
-//        let type = News.self
-//        var responseError: NetworkError?
-//        let promise = expectation(description: "Completion handler invoked")
-//        
-//        // when
-//        sessionProvider.request(type: type, service: service, completion: { (response) in
-//            switch response {
-//            case .success(_):
-//                break
-//            case let .failure(error):
-//                responseError = error
-//            }
-//            
-//            promise.fulfill()
-//        })
-//        wait(for: [promise], timeout: 5)
-//        
-//        // then
-//        XCTAssertNotNil(responseError)
-//    }
-    
     func testTopHeadlines_APIRequest_WithMockingjay_ErrorUknown() {
         // given
         let service = NewsService.headlines(countryCode: Environment.sources.value)
         let typeObject = Article.self
+        var responseArticle: Article?
         var responseError: NetworkError?
         let promise = expectation(description: "Completion handler invoked")
         
@@ -87,8 +40,8 @@ class TopHeadlinesAPITests: XCTestCase {
         // when
         sessionProvider.request(type: typeObject, service: service, completion: { (response) in
             switch response {
-            case .success(_):
-                break
+            case let .success(news):
+                responseArticle = news
             case let .failure(error):
                 responseError = error
             }
@@ -98,6 +51,7 @@ class TopHeadlinesAPITests: XCTestCase {
         wait(for: [promise], timeout: 5)
         
         // then
+        XCTAssertNil(responseArticle, "Top Headlines APIRequestWithMockingjayErrorUknown news object should be nil")
         XCTAssertNotNil(responseError, "Top Headlines APIRequestWithMockingjayErrorUknown failed")
     }
     
@@ -106,6 +60,7 @@ class TopHeadlinesAPITests: XCTestCase {
         let service = NewsService.headlines(countryCode: Environment.sources.value)
         let typeObject = News.self
         var responseNews: News?
+        var responseError: NetworkError?
         let promise = expectation(description: "Completion handler invoked")
         
         // Mockingjay
@@ -119,8 +74,8 @@ class TopHeadlinesAPITests: XCTestCase {
             switch response {
             case let .success(news):
                 responseNews = news
-            case .failure(_):
-                break
+            case let .failure(error):
+                responseError = error
             }
             
             promise.fulfill()
@@ -128,7 +83,8 @@ class TopHeadlinesAPITests: XCTestCase {
         wait(for: [promise], timeout: 5)
         
         // then
-        XCTAssertNotNil(responseNews, "Top Headlines APIRequestWithMockingjaySuccess failed")
+        XCTAssertNil(responseError, "Top Headlines APIRequestWithMockingjaySuccess error should be nil")
+        XCTAssertNotNil(responseNews, "Top Headlines APIRequestWithMockingjaySuccess news object should not be nil")
     }
 
 }
