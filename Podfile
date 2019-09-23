@@ -7,15 +7,15 @@ def criticalTechWorks_pods
   pod 'RealmSwift'
 end
 
-target 'CriticalTechWorks 2019 PT' do
+target 'CriticalTechWorks 2019 BBC News' do
 	criticalTechWorks_pods
 end
 
-target 'CriticalTechWorks 2019 US' do
+target 'CriticalTechWorks 2019 CNN' do
   	criticalTechWorks_pods
 end
 
-target 'CriticalTechWorks 2019 Tests' do
+target 'CriticalTechWorks 2019 BBC News Tests' do
 	pod 'Mockingjay'
 	criticalTechWorks_pods
 end

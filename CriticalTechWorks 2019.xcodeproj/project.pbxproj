@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		023DD5184338EA22AB49C4CC /* Pods_CriticalTechWorks_2019_US.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455E7EE109753F555A789818 /* Pods_CriticalTechWorks_2019_US.framework */; };
 		151025082331569400603F55 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151025072331569400603F55 /* CustomImageView.swift */; };
 		15263C1023338BAC009F1E09 /* HeadlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15263C0E23338BAC009F1E09 /* HeadlineViewController.swift */; };
 		15263C1123338BAC009F1E09 /* HeadlineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15263C0F23338BAC009F1E09 /* HeadlineViewController.xib */; };
@@ -49,8 +48,6 @@
 		1571B0DB23350A0F004AA911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1572D71823313E7600CFBA6F /* Assets.xcassets */; };
 		1571B0E72335131E004AA911 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571B0E62335131E004AA911 /* Environment.swift */; };
 		1571B0E82335131E004AA911 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571B0E62335131E004AA911 /* Environment.swift */; };
-		1571B0EB23351DF3004AA911 /* Info_PT.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1572D71D23313E7600CFBA6F /* Info_PT.plist */; };
-		1571B0EC23351DF6004AA911 /* Info_US.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1571B0E223350CE3004AA911 /* Info_US.plist */; };
 		1571B0F623352340004AA911 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571B0F523352340004AA911 /* String+Localized.swift */; };
 		1571B0F723352340004AA911 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571B0F523352340004AA911 /* String+Localized.swift */; };
 		1571B0FD23352450004AA911 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1571B10023352450004AA911 /* Localizable.strings */; };
@@ -74,31 +71,34 @@
 		1572D74C23313EDD00CFBA6F /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D74723313EDD00CFBA6F /* News.swift */; };
 		1572D751233148CA00CFBA6F /* HeadlineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572D74F233148CA00CFBA6F /* HeadlineTableViewCell.swift */; };
 		1572D752233148CA00CFBA6F /* HeadlineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1572D750233148CA00CFBA6F /* HeadlineTableViewCell.xib */; };
-		157822D02338DA8200FED81E /* FavoritesHeadlinesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157822CF2338DA8200FED81E /* FavoritesHeadlinesViewControllerTests.swift */; };
-		157822D22338DAD400FED81E /* HeadlineViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157822D12338DAD400FED81E /* HeadlineViewControllerTests.swift */; };
-		157822D52338E54E00FED81E /* HeadlineTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157822D42338E54E00FED81E /* HeadlineTableViewCellTests.swift */; };
-		157822D62338E89A00FED81E /* HeadlineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1572D750233148CA00CFBA6F /* HeadlineTableViewCell.xib */; };
-		1593CAA72337BA0D000E65D3 /* TopHeadlinesAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1593CAA62337BA0D000E65D3 /* TopHeadlinesAPITests.swift */; };
-		1593CAAF2337BC79000E65D3 /* top_headlines.json in Resources */ = {isa = PBXBuildFile; fileRef = 1593CAAE2337BC79000E65D3 /* top_headlines.json */; };
-		1593CAB12337CD5A000E65D3 /* TopHeadlinesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1593CAB02337CD5A000E65D3 /* TopHeadlinesViewControllerTests.swift */; };
-		1593CAB32337CF4F000E65D3 /* PersistanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1593CAB22337CF4F000E65D3 /* PersistanceTests.swift */; };
-		15B5555B4906B9A770AF8ED5 /* Pods_CriticalTechWorks_2019_PT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452B8DFD317D618157FE415B /* Pods_CriticalTechWorks_2019_PT.framework */; };
-		15C536482337ED4200379025 /* CustomImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C536472337ED4200379025 /* CustomImageViewTests.swift */; };
-		15C5364A2337FBA100379025 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15C536492337FBA100379025 /* image.jpg */; };
-		A79819EEA84EE4524E5C3BA9 /* Pods_CriticalTechWorks_2019_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97921BC6F657118487106FA3 /* Pods_CriticalTechWorks_2019_Tests.framework */; };
+		15DC6E7023391FDC007FAB0C /* Info_CNN.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1571B0E223350CE3004AA911 /* Info_CNN.plist */; };
+		15DC6E7123391FE3007FAB0C /* Info_BBC_News.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1572D71D23313E7600CFBA6F /* Info_BBC_News.plist */; };
+		15DC6E8A23392588007FAB0C /* PersistanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6E8023392586007FAB0C /* PersistanceTests.swift */; };
+		15DC6E8B23392588007FAB0C /* CustomImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6E8123392586007FAB0C /* CustomImageViewTests.swift */; };
+		15DC6E8C23392588007FAB0C /* top_headlines.json in Resources */ = {isa = PBXBuildFile; fileRef = 15DC6E8223392586007FAB0C /* top_headlines.json */; };
+		15DC6E8D23392588007FAB0C /* HeadlineTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6E8323392587007FAB0C /* HeadlineTableViewCellTests.swift */; };
+		15DC6E8E23392588007FAB0C /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15DC6E8423392587007FAB0C /* image.jpg */; };
+		15DC6E8F23392588007FAB0C /* TopHeadlinesAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6E8523392588007FAB0C /* TopHeadlinesAPITests.swift */; };
+		15DC6E9023392588007FAB0C /* TopHeadlinesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6E8723392588007FAB0C /* TopHeadlinesViewControllerTests.swift */; };
+		15DC6E9123392588007FAB0C /* HeadlineViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6E8823392588007FAB0C /* HeadlineViewControllerTests.swift */; };
+		15DC6E9223392588007FAB0C /* FavoritesHeadlinesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6E8923392588007FAB0C /* FavoritesHeadlinesViewControllerTests.swift */; };
+		2BFF9A012D1FDDC8DE80BBF3 /* Pods_CriticalTechWorks_2019_BBC_News_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8808D55D5A2B55F0D818EBEF /* Pods_CriticalTechWorks_2019_BBC_News_Tests.framework */; };
+		3B3A6C7B0EED07F2633B0A58 /* Pods_CriticalTechWorks_2019_BBC_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C3E4F2565D8C527364B339 /* Pods_CriticalTechWorks_2019_BBC_News.framework */; };
+		A47D181F0CB13308495EDA76 /* Pods_CriticalTechWorks_2019_CNN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915F9B1CC29F995BA261BF70 /* Pods_CriticalTechWorks_2019_CNN.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1593CAA92337BA0D000E65D3 /* PBXContainerItemProxy */ = {
+		15DC6E7B23392570007FAB0C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1572D70623313E7400CFBA6F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1572D70D23313E7400CFBA6F;
-			remoteInfo = "CriticalTechWorks 2019 PT";
+			remoteInfo = "CriticalTechWorks 2019 BBC News";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0213BEF6BD9D4602D1A596DF /* Pods-CriticalTechWorks 2019 BBC News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 BBC News.debug.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 BBC News/Pods-CriticalTechWorks 2019 BBC News.debug.xcconfig"; sourceTree = "<group>"; };
 		151025072331569400603F55 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		15263C0E23338BAC009F1E09 /* HeadlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineViewController.swift; sourceTree = "<group>"; };
 		15263C0F23338BAC009F1E09 /* HeadlineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadlineViewController.xib; sourceTree = "<group>"; };
@@ -109,18 +109,18 @@
 		15263C1F2333CB02009F1E09 /* QueryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryType.swift; sourceTree = "<group>"; };
 		155AA98E2334E57B0036F37F /* FavoritesHeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesHeadlinesViewController.swift; sourceTree = "<group>"; };
 		155AA9902334EC2A0036F37F /* BaseHeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHeadlinesViewController.swift; sourceTree = "<group>"; };
-		1571B0E023350A0F004AA911 /* CriticalTechWorks 2019 US.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CriticalTechWorks 2019 US.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1571B0E223350CE3004AA911 /* Info_US.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_US.plist; sourceTree = "<group>"; };
+		1571B0E023350A0F004AA911 /* CriticalTechWorks 2019 CNN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CriticalTechWorks 2019 CNN.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1571B0E223350CE3004AA911 /* Info_CNN.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_CNN.plist; sourceTree = "<group>"; };
 		1571B0E62335131E004AA911 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1571B0F523352340004AA911 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		1571B0F923352411004AA911 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		1571B0FF23352450004AA911 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019 PT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CriticalTechWorks 2019 PT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019 BBC News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CriticalTechWorks 2019 BBC News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1572D71123313E7400CFBA6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1572D71323313E7400CFBA6F /* TopHeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesViewController.swift; sourceTree = "<group>"; };
 		1572D71823313E7600CFBA6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1572D71B23313E7600CFBA6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1572D71D23313E7600CFBA6F /* Info_PT.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info_PT.plist; sourceTree = "<group>"; };
+		1572D71D23313E7600CFBA6F /* Info_BBC_News.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info_BBC_News.plist; sourceTree = "<group>"; };
 		1572D72723313EA400CFBA6F /* ParametersEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParametersEncoding.swift; sourceTree = "<group>"; };
 		1572D72823313EA400CFBA6F /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		1572D72923313EA400CFBA6F /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -136,27 +136,33 @@
 		1572D74723313EDD00CFBA6F /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		1572D74F233148CA00CFBA6F /* HeadlineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineTableViewCell.swift; sourceTree = "<group>"; };
 		1572D750233148CA00CFBA6F /* HeadlineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadlineTableViewCell.xib; sourceTree = "<group>"; };
-		157822CF2338DA8200FED81E /* FavoritesHeadlinesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesHeadlinesViewControllerTests.swift; sourceTree = "<group>"; };
-		157822D12338DAD400FED81E /* HeadlineViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineViewControllerTests.swift; sourceTree = "<group>"; };
-		157822D42338E54E00FED81E /* HeadlineTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineTableViewCellTests.swift; sourceTree = "<group>"; };
-		1593CAA42337BA0D000E65D3 /* CriticalTechWorks 2019 Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CriticalTechWorks 2019 Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1593CAA62337BA0D000E65D3 /* TopHeadlinesAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesAPITests.swift; sourceTree = "<group>"; };
-		1593CAA82337BA0D000E65D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1593CAAE2337BC79000E65D3 /* top_headlines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_headlines.json; sourceTree = "<group>"; };
-		1593CAB02337CD5A000E65D3 /* TopHeadlinesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesViewControllerTests.swift; sourceTree = "<group>"; };
-		1593CAB22337CF4F000E65D3 /* PersistanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceTests.swift; sourceTree = "<group>"; };
 		15C536412337DA6000379025 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C536432337DA6000379025 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		15C536472337ED4200379025 /* CustomImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageViewTests.swift; sourceTree = "<group>"; };
-		15C536492337FBA100379025 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		15DC6E7623392570007FAB0C /* CriticalTechWorks 2019 BBC News Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CriticalTechWorks 2019 BBC News Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15DC6E7A23392570007FAB0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15DC6E8023392586007FAB0C /* PersistanceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistanceTests.swift; sourceTree = "<group>"; };
+		15DC6E8123392586007FAB0C /* CustomImageViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageViewTests.swift; sourceTree = "<group>"; };
+		15DC6E8223392586007FAB0C /* top_headlines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_headlines.json; sourceTree = "<group>"; };
+		15DC6E8323392587007FAB0C /* HeadlineTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlineTableViewCellTests.swift; sourceTree = "<group>"; };
+		15DC6E8423392587007FAB0C /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		15DC6E8523392588007FAB0C /* TopHeadlinesAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopHeadlinesAPITests.swift; sourceTree = "<group>"; };
+		15DC6E8723392588007FAB0C /* TopHeadlinesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopHeadlinesViewControllerTests.swift; sourceTree = "<group>"; };
+		15DC6E8823392588007FAB0C /* HeadlineViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlineViewControllerTests.swift; sourceTree = "<group>"; };
+		15DC6E8923392588007FAB0C /* FavoritesHeadlinesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesHeadlinesViewControllerTests.swift; sourceTree = "<group>"; };
+		25C3E4F2565D8C527364B339 /* Pods_CriticalTechWorks_2019_BBC_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_BBC_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9AEB2C4DED628E9663A0B2 /* Pods-CriticalTechWorks 2019 US.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 US.release.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US.release.xcconfig"; sourceTree = "<group>"; };
-		452B8DFD317D618157FE415B /* Pods_CriticalTechWorks_2019_PT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_PT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		455E7EE109753F555A789818 /* Pods_CriticalTechWorks_2019_US.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_US.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE1B205EEAD41D3FD67398B /* Pods-CriticalTechWorks 2019 BBC News Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 BBC News Tests.release.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 BBC News Tests/Pods-CriticalTechWorks 2019 BBC News Tests.release.xcconfig"; sourceTree = "<group>"; };
+		60372D3AAA8CC30AD7F56360 /* Pods-CriticalTechWorks 2019 BBC News Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 BBC News Tests.debug.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 BBC News Tests/Pods-CriticalTechWorks 2019 BBC News Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		83E27C8008DF0A82BFFED681 /* Pods-CriticalTechWorks 2019 CNN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 CNN.release.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 CNN/Pods-CriticalTechWorks 2019 CNN.release.xcconfig"; sourceTree = "<group>"; };
+		8808D55D5A2B55F0D818EBEF /* Pods_CriticalTechWorks_2019_BBC_News_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_BBC_News_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8834FEB6E1F63D2DFE44856D /* Pods-CriticalTechWorks 2019 PT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 PT.release.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT.release.xcconfig"; sourceTree = "<group>"; };
+		8C2764DB1464A08AB39F896C /* Pods-CriticalTechWorks 2019 CNN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 CNN.debug.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 CNN/Pods-CriticalTechWorks 2019 CNN.debug.xcconfig"; sourceTree = "<group>"; };
+		915F9B1CC29F995BA261BF70 /* Pods_CriticalTechWorks_2019_CNN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_CNN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97921BC6F657118487106FA3 /* Pods_CriticalTechWorks_2019_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CriticalTechWorks_2019_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6793BD1C30BA85251F4B75 /* Pods-CriticalTechWorks 2019 PT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 PT.debug.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT.debug.xcconfig"; sourceTree = "<group>"; };
 		B19DCEE80A5FED4A491233B1 /* Pods-CriticalTechWorks 2019 Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 Tests.debug.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 Tests/Pods-CriticalTechWorks 2019 Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C09500AA4DAF4D2410382FA4 /* Pods-CriticalTechWorks 2019 US.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 US.debug.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US.debug.xcconfig"; sourceTree = "<group>"; };
+		FC25DDCABF4879457C858BCA /* Pods-CriticalTechWorks 2019 BBC News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 BBC News.release.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 BBC News/Pods-CriticalTechWorks 2019 BBC News.release.xcconfig"; sourceTree = "<group>"; };
 		FFFB1BE0DE3012DD201B5B1D /* Pods-CriticalTechWorks 2019 Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CriticalTechWorks 2019 Tests.release.xcconfig"; path = "Target Support Files/Pods-CriticalTechWorks 2019 Tests/Pods-CriticalTechWorks 2019 Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,7 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				023DD5184338EA22AB49C4CC /* Pods_CriticalTechWorks_2019_US.framework in Frameworks */,
+				A47D181F0CB13308495EDA76 /* Pods_CriticalTechWorks_2019_CNN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,15 +179,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15B5555B4906B9A770AF8ED5 /* Pods_CriticalTechWorks_2019_PT.framework in Frameworks */,
+				3B3A6C7B0EED07F2633B0A58 /* Pods_CriticalTechWorks_2019_BBC_News.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1593CAA12337BA0D000E65D3 /* Frameworks */ = {
+		15DC6E7323392570007FAB0C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A79819EEA84EE4524E5C3BA9 /* Pods_CriticalTechWorks_2019_Tests.framework in Frameworks */,
+				2BFF9A012D1FDDC8DE80BBF3 /* Pods_CriticalTechWorks_2019_BBC_News_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,8 +236,8 @@
 				1571B10023352450004AA911 /* Localizable.strings */,
 				1572D71823313E7600CFBA6F /* Assets.xcassets */,
 				1572D71A23313E7600CFBA6F /* LaunchScreen.storyboard */,
-				1572D71D23313E7600CFBA6F /* Info_PT.plist */,
-				1571B0E223350CE3004AA911 /* Info_US.plist */,
+				1572D71D23313E7600CFBA6F /* Info_BBC_News.plist */,
+				1571B0E223350CE3004AA911 /* Info_CNN.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -256,7 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				1572D71023313E7400CFBA6F /* CriticalTechWorks 2019 */,
-				1593CAA52337BA0D000E65D3 /* CriticalTechWorks 2019 Tests */,
+				15DC6E7723392570007FAB0C /* CriticalTechWorks 2019 BBC News Tests */,
 				1572D70F23313E7400CFBA6F /* Products */,
 				E55578989032A7449D018136 /* Pods */,
 				3CFA73C8ABCB6B05FD48B7F8 /* Frameworks */,
@@ -266,9 +272,9 @@
 		1572D70F23313E7400CFBA6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019 PT.app */,
-				1571B0E023350A0F004AA911 /* CriticalTechWorks 2019 US.app */,
-				1593CAA42337BA0D000E65D3 /* CriticalTechWorks 2019 Tests.xctest */,
+				1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019 BBC News.app */,
+				1571B0E023350A0F004AA911 /* CriticalTechWorks 2019 CNN.app */,
+				15DC6E7623392570007FAB0C /* CriticalTechWorks 2019 BBC News Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -378,29 +384,29 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		157822D32338DF7300FED81E /* ViewControllers */ = {
+		15DC6E7723392570007FAB0C /* CriticalTechWorks 2019 BBC News Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1593CAB02337CD5A000E65D3 /* TopHeadlinesViewControllerTests.swift */,
-				157822D12338DAD400FED81E /* HeadlineViewControllerTests.swift */,
-				157822CF2338DA8200FED81E /* FavoritesHeadlinesViewControllerTests.swift */,
+				15DC6E8623392588007FAB0C /* ViewControllers */,
+				15DC6E8123392586007FAB0C /* CustomImageViewTests.swift */,
+				15DC6E8323392587007FAB0C /* HeadlineTableViewCellTests.swift */,
+				15DC6E8023392586007FAB0C /* PersistanceTests.swift */,
+				15DC6E8523392588007FAB0C /* TopHeadlinesAPITests.swift */,
+				15DC6E8423392587007FAB0C /* image.jpg */,
+				15DC6E8223392586007FAB0C /* top_headlines.json */,
+				15DC6E7A23392570007FAB0C /* Info.plist */,
 			);
-			path = ViewControllers;
+			path = "CriticalTechWorks 2019 BBC News Tests";
 			sourceTree = "<group>";
 		};
-		1593CAA52337BA0D000E65D3 /* CriticalTechWorks 2019 Tests */ = {
+		15DC6E8623392588007FAB0C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				157822D32338DF7300FED81E /* ViewControllers */,
-				1593CAA62337BA0D000E65D3 /* TopHeadlinesAPITests.swift */,
-				1593CAB22337CF4F000E65D3 /* PersistanceTests.swift */,
-				15C536472337ED4200379025 /* CustomImageViewTests.swift */,
-				157822D42338E54E00FED81E /* HeadlineTableViewCellTests.swift */,
-				15C536492337FBA100379025 /* image.jpg */,
-				1593CAAE2337BC79000E65D3 /* top_headlines.json */,
-				1593CAA82337BA0D000E65D3 /* Info.plist */,
+				15DC6E8723392588007FAB0C /* TopHeadlinesViewControllerTests.swift */,
+				15DC6E8823392588007FAB0C /* HeadlineViewControllerTests.swift */,
+				15DC6E8923392588007FAB0C /* FavoritesHeadlinesViewControllerTests.swift */,
 			);
-			path = "CriticalTechWorks 2019 Tests";
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		3CFA73C8ABCB6B05FD48B7F8 /* Frameworks */ = {
@@ -408,9 +414,10 @@
 			children = (
 				15C536412337DA6000379025 /* Realm.framework */,
 				15C536432337DA6000379025 /* RealmSwift.framework */,
-				452B8DFD317D618157FE415B /* Pods_CriticalTechWorks_2019_PT.framework */,
 				97921BC6F657118487106FA3 /* Pods_CriticalTechWorks_2019_Tests.framework */,
-				455E7EE109753F555A789818 /* Pods_CriticalTechWorks_2019_US.framework */,
+				25C3E4F2565D8C527364B339 /* Pods_CriticalTechWorks_2019_BBC_News.framework */,
+				8808D55D5A2B55F0D818EBEF /* Pods_CriticalTechWorks_2019_BBC_News_Tests.framework */,
+				915F9B1CC29F995BA261BF70 /* Pods_CriticalTechWorks_2019_CNN.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -424,6 +431,12 @@
 				8834FEB6E1F63D2DFE44856D /* Pods-CriticalTechWorks 2019 PT.release.xcconfig */,
 				B19DCEE80A5FED4A491233B1 /* Pods-CriticalTechWorks 2019 Tests.debug.xcconfig */,
 				FFFB1BE0DE3012DD201B5B1D /* Pods-CriticalTechWorks 2019 Tests.release.xcconfig */,
+				0213BEF6BD9D4602D1A596DF /* Pods-CriticalTechWorks 2019 BBC News.debug.xcconfig */,
+				FC25DDCABF4879457C858BCA /* Pods-CriticalTechWorks 2019 BBC News.release.xcconfig */,
+				60372D3AAA8CC30AD7F56360 /* Pods-CriticalTechWorks 2019 BBC News Tests.debug.xcconfig */,
+				5DE1B205EEAD41D3FD67398B /* Pods-CriticalTechWorks 2019 BBC News Tests.release.xcconfig */,
+				8C2764DB1464A08AB39F896C /* Pods-CriticalTechWorks 2019 CNN.debug.xcconfig */,
+				83E27C8008DF0A82BFFED681 /* Pods-CriticalTechWorks 2019 CNN.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -431,9 +444,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1571B0B823350A0F004AA911 /* CriticalTechWorks 2019 US */ = {
+		1571B0B823350A0F004AA911 /* CriticalTechWorks 2019 CNN */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1571B0DD23350A0F004AA911 /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019 US" */;
+			buildConfigurationList = 1571B0DD23350A0F004AA911 /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019 CNN" */;
 			buildPhases = (
 				1571B0B923350A0F004AA911 /* [CP] Check Pods Manifest.lock */,
 				1571B0BA23350A0F004AA911 /* Sources */,
@@ -445,14 +458,14 @@
 			);
 			dependencies = (
 			);
-			name = "CriticalTechWorks 2019 US";
+			name = "CriticalTechWorks 2019 CNN";
 			productName = "CriticalTechWorks 2019";
-			productReference = 1571B0E023350A0F004AA911 /* CriticalTechWorks 2019 US.app */;
+			productReference = 1571B0E023350A0F004AA911 /* CriticalTechWorks 2019 CNN.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1572D70D23313E7400CFBA6F /* CriticalTechWorks 2019 PT */ = {
+		1572D70D23313E7400CFBA6F /* CriticalTechWorks 2019 BBC News */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1572D72023313E7600CFBA6F /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019 PT" */;
+			buildConfigurationList = 1572D72023313E7600CFBA6F /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019 BBC News" */;
 			buildPhases = (
 				8F1D4000247AD9ED644AA86D /* [CP] Check Pods Manifest.lock */,
 				1572D70A23313E7400CFBA6F /* Sources */,
@@ -464,29 +477,29 @@
 			);
 			dependencies = (
 			);
-			name = "CriticalTechWorks 2019 PT";
+			name = "CriticalTechWorks 2019 BBC News";
 			productName = "CriticalTechWorks 2019";
-			productReference = 1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019 PT.app */;
+			productReference = 1572D70E23313E7400CFBA6F /* CriticalTechWorks 2019 BBC News.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1593CAA32337BA0D000E65D3 /* CriticalTechWorks 2019 Tests */ = {
+		15DC6E7523392570007FAB0C /* CriticalTechWorks 2019 BBC News Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1593CAAB2337BA0D000E65D3 /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019 Tests" */;
+			buildConfigurationList = 15DC6E7D23392570007FAB0C /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019 BBC News Tests" */;
 			buildPhases = (
-				29606A64C670276CD5268AF3 /* [CP] Check Pods Manifest.lock */,
-				1593CAA02337BA0D000E65D3 /* Sources */,
-				1593CAA12337BA0D000E65D3 /* Frameworks */,
-				1593CAA22337BA0D000E65D3 /* Resources */,
-				686937D81D9EAD6512A452DD /* [CP] Embed Pods Frameworks */,
+				DA7EDE63217B16FBE7F94D05 /* [CP] Check Pods Manifest.lock */,
+				15DC6E7223392570007FAB0C /* Sources */,
+				15DC6E7323392570007FAB0C /* Frameworks */,
+				15DC6E7423392570007FAB0C /* Resources */,
+				4B47C7CBC5099CFB67DEB3B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1593CAAA2337BA0D000E65D3 /* PBXTargetDependency */,
+				15DC6E7C23392570007FAB0C /* PBXTargetDependency */,
 			);
-			name = "CriticalTechWorks 2019 Tests";
-			productName = "CriticalTechWorks 2019 Tests";
-			productReference = 1593CAA42337BA0D000E65D3 /* CriticalTechWorks 2019 Tests.xctest */;
+			name = "CriticalTechWorks 2019 BBC News Tests";
+			productName = "CriticalTechWorks 2019 BBC News Tests";
+			productReference = 15DC6E7623392570007FAB0C /* CriticalTechWorks 2019 BBC News Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -502,8 +515,9 @@
 					1572D70D23313E7400CFBA6F = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					1593CAA32337BA0D000E65D3 = {
+					15DC6E7523392570007FAB0C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 1572D70D23313E7400CFBA6F;
 					};
 				};
@@ -521,9 +535,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1572D70D23313E7400CFBA6F /* CriticalTechWorks 2019 PT */,
-				1571B0B823350A0F004AA911 /* CriticalTechWorks 2019 US */,
-				1593CAA32337BA0D000E65D3 /* CriticalTechWorks 2019 Tests */,
+				1572D70D23313E7400CFBA6F /* CriticalTechWorks 2019 BBC News */,
+				1571B0B823350A0F004AA911 /* CriticalTechWorks 2019 CNN */,
+				15DC6E7523392570007FAB0C /* CriticalTechWorks 2019 BBC News Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -533,10 +547,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15DC6E7023391FDC007FAB0C /* Info_CNN.plist in Resources */,
 				1571B0D823350A0F004AA911 /* HeadlineViewController.xib in Resources */,
 				1571B0D923350A0F004AA911 /* LaunchScreen.storyboard in Resources */,
 				1571B0FE23352450004AA911 /* Localizable.strings in Resources */,
-				1571B0EC23351DF6004AA911 /* Info_US.plist in Resources */,
 				1571B0DA23350A0F004AA911 /* HeadlineTableViewCell.xib in Resources */,
 				1571B0DB23350A0F004AA911 /* Assets.xcassets in Resources */,
 			);
@@ -546,7 +560,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1571B0EB23351DF3004AA911 /* Info_PT.plist in Resources */,
+				15DC6E7123391FE3007FAB0C /* Info_BBC_News.plist in Resources */,
 				15263C1123338BAC009F1E09 /* HeadlineViewController.xib in Resources */,
 				1571B0FD23352450004AA911 /* Localizable.strings in Resources */,
 				1572D71C23313E7600CFBA6F /* LaunchScreen.storyboard in Resources */,
@@ -555,13 +569,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1593CAA22337BA0D000E65D3 /* Resources */ = {
+		15DC6E7423392570007FAB0C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				157822D62338E89A00FED81E /* HeadlineTableViewCell.xib in Resources */,
-				1593CAAF2337BC79000E65D3 /* top_headlines.json in Resources */,
-				15C5364A2337FBA100379025 /* image.jpg in Resources */,
+				15DC6E8C23392588007FAB0C /* top_headlines.json in Resources */,
+				15DC6E8E23392588007FAB0C /* image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,50 +596,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CriticalTechWorks 2019 US-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CriticalTechWorks 2019 CNN-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		29606A64C670276CD5268AF3 /* [CP] Check Pods Manifest.lock */ = {
+		4B47C7CBC5099CFB67DEB3B4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CriticalTechWorks 2019 Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		686937D81D9EAD6512A452DD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 Tests/Pods-CriticalTechWorks 2019 Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 BBC News Tests/Pods-CriticalTechWorks 2019 BBC News Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 Tests/Pods-CriticalTechWorks 2019 Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 BBC News Tests/Pods-CriticalTechWorks 2019 BBC News Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 Tests/Pods-CriticalTechWorks 2019 Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 BBC News Tests/Pods-CriticalTechWorks 2019 BBC News Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8ECF069D0EB1955CB38AA00A /* [CP] Embed Pods Frameworks */ = {
@@ -635,15 +626,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 BBC News/Pods-CriticalTechWorks 2019 BBC News-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 BBC News/Pods-CriticalTechWorks 2019 BBC News-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 PT/Pods-CriticalTechWorks 2019 PT-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 BBC News/Pods-CriticalTechWorks 2019 BBC News-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8F1D4000247AD9ED644AA86D /* [CP] Check Pods Manifest.lock */ = {
@@ -661,7 +652,29 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CriticalTechWorks 2019 PT-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CriticalTechWorks 2019 BBC News-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA7EDE63217B16FBE7F94D05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CriticalTechWorks 2019 BBC News Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -674,15 +687,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 CNN/Pods-CriticalTechWorks 2019 CNN-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 CNN/Pods-CriticalTechWorks 2019 CNN-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 US/Pods-CriticalTechWorks 2019 US-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CriticalTechWorks 2019 CNN/Pods-CriticalTechWorks 2019 CNN-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -756,27 +769,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1593CAA02337BA0D000E65D3 /* Sources */ = {
+		15DC6E7223392570007FAB0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1593CAB12337CD5A000E65D3 /* TopHeadlinesViewControllerTests.swift in Sources */,
-				15C536482337ED4200379025 /* CustomImageViewTests.swift in Sources */,
-				157822D02338DA8200FED81E /* FavoritesHeadlinesViewControllerTests.swift in Sources */,
-				157822D52338E54E00FED81E /* HeadlineTableViewCellTests.swift in Sources */,
-				1593CAB32337CF4F000E65D3 /* PersistanceTests.swift in Sources */,
-				157822D22338DAD400FED81E /* HeadlineViewControllerTests.swift in Sources */,
-				1593CAA72337BA0D000E65D3 /* TopHeadlinesAPITests.swift in Sources */,
+				15DC6E9223392588007FAB0C /* FavoritesHeadlinesViewControllerTests.swift in Sources */,
+				15DC6E8A23392588007FAB0C /* PersistanceTests.swift in Sources */,
+				15DC6E8B23392588007FAB0C /* CustomImageViewTests.swift in Sources */,
+				15DC6E9123392588007FAB0C /* HeadlineViewControllerTests.swift in Sources */,
+				15DC6E8F23392588007FAB0C /* TopHeadlinesAPITests.swift in Sources */,
+				15DC6E8D23392588007FAB0C /* HeadlineTableViewCellTests.swift in Sources */,
+				15DC6E9023392588007FAB0C /* TopHeadlinesViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1593CAAA2337BA0D000E65D3 /* PBXTargetDependency */ = {
+		15DC6E7C23392570007FAB0C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1572D70D23313E7400CFBA6F /* CriticalTechWorks 2019 PT */;
-			targetProxy = 1593CAA92337BA0D000E65D3 /* PBXContainerItemProxy */;
+			target = 1572D70D23313E7400CFBA6F /* CriticalTechWorks 2019 BBC News */;
+			targetProxy = 15DC6E7B23392570007FAB0C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -803,17 +816,17 @@
 /* Begin XCBuildConfiguration section */
 		1571B0DE23350A0F004AA911 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C09500AA4DAF4D2410382FA4 /* Pods-CriticalTechWorks 2019 US.debug.xcconfig */;
+			baseConfigurationReference = 8C2764DB1464A08AB39F896C /* Pods-CriticalTechWorks 2019 CNN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CEWUHN7W92;
-				INFOPLIST_FILE = "CriticalTechWorks 2019/Resources/Info_US.plist";
+				INFOPLIST_FILE = "CriticalTechWorks 2019/Resources/Info_CNN.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019-US";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019-CNN";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SOURCES = cnn;
 				SWIFT_VERSION = 4.2;
@@ -823,17 +836,17 @@
 		};
 		1571B0DF23350A0F004AA911 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F9AEB2C4DED628E9663A0B2 /* Pods-CriticalTechWorks 2019 US.release.xcconfig */;
+			baseConfigurationReference = 83E27C8008DF0A82BFFED681 /* Pods-CriticalTechWorks 2019 CNN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CEWUHN7W92;
-				INFOPLIST_FILE = "CriticalTechWorks 2019/Resources/Info_US.plist";
+				INFOPLIST_FILE = "CriticalTechWorks 2019/Resources/Info_CNN.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019-US";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019-CNN";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SOURCES = cnn;
 				SWIFT_VERSION = 4.2;
@@ -961,17 +974,17 @@
 		};
 		1572D72123313E7600CFBA6F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD6793BD1C30BA85251F4B75 /* Pods-CriticalTechWorks 2019 PT.debug.xcconfig */;
+			baseConfigurationReference = 0213BEF6BD9D4602D1A596DF /* Pods-CriticalTechWorks 2019 BBC News.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CEWUHN7W92;
-				INFOPLIST_FILE = "CriticalTechWorks 2019/Resources/Info_PT.plist";
+				INFOPLIST_FILE = "CriticalTechWorks 2019/Resources/Info_BBC_News.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019-PT";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019-BBC-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SOURCES = "bbc-news";
 				SWIFT_VERSION = 4.2;
@@ -981,17 +994,17 @@
 		};
 		1572D72223313E7600CFBA6F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8834FEB6E1F63D2DFE44856D /* Pods-CriticalTechWorks 2019 PT.release.xcconfig */;
+			baseConfigurationReference = FC25DDCABF4879457C858BCA /* Pods-CriticalTechWorks 2019 BBC News.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CEWUHN7W92;
-				INFOPLIST_FILE = "CriticalTechWorks 2019/Resources/Info_PT.plist";
+				INFOPLIST_FILE = "CriticalTechWorks 2019/Resources/Info_BBC_News.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019-PT";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019-BBC-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SOURCES = "bbc-news";
 				SWIFT_VERSION = 4.2;
@@ -999,52 +1012,53 @@
 			};
 			name = Release;
 		};
-		1593CAAC2337BA0D000E65D3 /* Debug */ = {
+		15DC6E7E23392570007FAB0C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B19DCEE80A5FED4A491233B1 /* Pods-CriticalTechWorks 2019 Tests.debug.xcconfig */;
+			baseConfigurationReference = 60372D3AAA8CC30AD7F56360 /* Pods-CriticalTechWorks 2019 BBC News Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "CriticalTechWorks 2019 Tests/Info.plist";
+				INFOPLIST_FILE = "CriticalTechWorks 2019 BBC News Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PODS_PODFILE_DIR_PATH = "${SRCROOT}/.";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019-Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019-BBC-News-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CriticalTechWorks 2019 PT.app/CriticalTechWorks 2019 PT";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CriticalTechWorks 2019 BBC News.app/CriticalTechWorks 2019 BBC News";
 			};
 			name = Debug;
 		};
-		1593CAAD2337BA0D000E65D3 /* Release */ = {
+		15DC6E7F23392570007FAB0C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFFB1BE0DE3012DD201B5B1D /* Pods-CriticalTechWorks 2019 Tests.release.xcconfig */;
+			baseConfigurationReference = 5DE1B205EEAD41D3FD67398B /* Pods-CriticalTechWorks 2019 BBC News Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "CriticalTechWorks 2019 Tests/Info.plist";
+				INFOPLIST_FILE = "CriticalTechWorks 2019 BBC News Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PODS_PODFILE_DIR_PATH = "${SRCROOT}/.";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019-Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brunosilva.CriticalTechWorks-2019-BBC-News-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CriticalTechWorks 2019 PT.app/CriticalTechWorks 2019 PT";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CriticalTechWorks 2019 BBC News.app/CriticalTechWorks 2019 BBC News";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1571B0DD23350A0F004AA911 /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019 US" */ = {
+		1571B0DD23350A0F004AA911 /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019 CNN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1571B0DE23350A0F004AA911 /* Debug */,
@@ -1062,7 +1076,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1572D72023313E7600CFBA6F /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019 PT" */ = {
+		1572D72023313E7600CFBA6F /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019 BBC News" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1572D72123313E7600CFBA6F /* Debug */,
@@ -1071,11 +1085,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1593CAAB2337BA0D000E65D3 /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019 Tests" */ = {
+		15DC6E7D23392570007FAB0C /* Build configuration list for PBXNativeTarget "CriticalTechWorks 2019 BBC News Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1593CAAC2337BA0D000E65D3 /* Debug */,
-				1593CAAD2337BA0D000E65D3 /* Release */,
+				15DC6E7E23392570007FAB0C /* Debug */,
+				15DC6E7F23392570007FAB0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

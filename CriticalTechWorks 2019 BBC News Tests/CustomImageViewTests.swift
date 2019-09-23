@@ -7,8 +7,8 @@
 //
 
 import XCTest
-@testable import CriticalTechWorks_2019_PT
 import Mockingjay
+@testable import CriticalTechWorks_2019_BBC_News
 
 class CustomImageViewTests: XCTestCase {
 

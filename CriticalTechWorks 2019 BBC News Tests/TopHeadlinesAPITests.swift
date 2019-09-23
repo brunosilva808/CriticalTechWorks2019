@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import CriticalTechWorks_2019_PT
+@testable import CriticalTechWorks_2019_BBC_News
 import Mockingjay
 
 class TopHeadlinesAPITests: XCTestCase {
@@ -51,8 +51,8 @@ class TopHeadlinesAPITests: XCTestCase {
         wait(for: [promise], timeout: 5)
         
         // then
-        XCTAssertNil(responseArticle, "Top Headlines APIRequestWithMockingjayErrorUknown news object should be nil")
-        XCTAssertNotNil(responseError, "Top Headlines APIRequestWithMockingjayErrorUknown failed")
+        XCTAssertNil(responseArticle, "Top Headlines API response should be nil")
+        XCTAssertNotNil(responseError, "Top Headlines API error should not be nil")
     }
     
     func testTopHeadlines_APIRequest_WithMockingjay_Success() {
@@ -84,8 +84,8 @@ class TopHeadlinesAPITests: XCTestCase {
         wait(for: [promise], timeout: 5)
         
         // then
-        XCTAssertNil(responseError, "Top Headlines APIRequestWithMockingjaySuccess error should be nil")
-        XCTAssertNotNil(responseNews, "Top Headlines APIRequestWithMockingjaySuccess news object should not be nil")
+        XCTAssertNil(responseError, "Top Headlines API error should be nil")
+        XCTAssertNotNil(responseNews, "Top Headlines API response should not be nil")
     }
 
 }

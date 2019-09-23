@@ -8,7 +8,7 @@
 
 import XCTest
 import RealmSwift
-@testable import CriticalTechWorks_2019_PT
+@testable import CriticalTechWorks_2019_BBC_News
 
 class PersistanceTests: XCTestCase {
 

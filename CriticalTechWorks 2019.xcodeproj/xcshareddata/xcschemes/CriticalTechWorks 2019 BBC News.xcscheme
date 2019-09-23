@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1572D70D23313E7400CFBA6F"
-               BuildableName = "CriticalTechWorks 2019 PT.app"
-               BlueprintName = "CriticalTechWorks 2019 PT"
+               BuildableName = "CriticalTechWorks 2019 BBC News.app"
+               BlueprintName = "CriticalTechWorks 2019 BBC News"
                ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1593CAA32337BA0D000E65D3"
-               BuildableName = "CriticalTechWorks 2019 Tests.xctest"
-               BlueprintName = "CriticalTechWorks 2019 Tests"
+               BlueprintIdentifier = "15DC6E7523392570007FAB0C"
+               BuildableName = "CriticalTechWorks 2019 BBC News Tests.xctest"
+               BlueprintName = "CriticalTechWorks 2019 BBC News Tests"
                ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -44,8 +44,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1572D70D23313E7400CFBA6F"
-            BuildableName = "CriticalTechWorks 2019 PT.app"
-            BlueprintName = "CriticalTechWorks 2019 PT"
+            BuildableName = "CriticalTechWorks 2019 BBC News.app"
+            BlueprintName = "CriticalTechWorks 2019 BBC News"
             ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,8 +67,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1572D70D23313E7400CFBA6F"
-            BuildableName = "CriticalTechWorks 2019 PT.app"
-            BlueprintName = "CriticalTechWorks 2019 PT"
+            BuildableName = "CriticalTechWorks 2019 BBC News.app"
+            BlueprintName = "CriticalTechWorks 2019 BBC News"
             ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -86,8 +86,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1572D70D23313E7400CFBA6F"
-            BuildableName = "CriticalTechWorks 2019 PT.app"
-            BlueprintName = "CriticalTechWorks 2019 PT"
+            BuildableName = "CriticalTechWorks 2019 BBC News.app"
+            BlueprintName = "CriticalTechWorks 2019 BBC News"
             ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

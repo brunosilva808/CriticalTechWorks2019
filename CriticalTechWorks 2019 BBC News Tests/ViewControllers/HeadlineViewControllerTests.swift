@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import CriticalTechWorks_2019_PT
+@testable import CriticalTechWorks_2019_BBC_News
 
 class HeadlineViewControllerTests: XCTestCase {
 

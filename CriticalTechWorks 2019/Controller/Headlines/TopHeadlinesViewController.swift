@@ -16,7 +16,7 @@ class TopHeadlinesViewController: BaseHeadlinesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = Environment.sources.value
+        self.title = "\(Environment.sources.value)".capitalized
         getTopHeadlines()
         setupBarButton()
     }
