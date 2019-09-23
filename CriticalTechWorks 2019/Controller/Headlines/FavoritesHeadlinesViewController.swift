@@ -14,6 +14,19 @@ class FavoritesHeadlinesViewController: BaseHeadlinesViewController {
         super.viewDidLoad()
 
         self.title = "favorites.title".localized
+        setupBarButton()
+    }
+    
+    private func setupBarButton() {
+        let button = UIBarButtonItem(title: "favorites.close.title".localized,
+                                     style: .plain,
+                                     target: self,
+                                     action: #selector(rightBarButtonPressed))
+        self.navigationItem.rightBarButtonItem  = button
+    }
+    
+    @objc func rightBarButtonPressed() {
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -25,7 +25,7 @@ class TopHeadlinesAPITests: XCTestCase {
     
     func testTopHeadlines_APIRequest_WithMockingjay_ErrorUknown() {
         // given
-        let service = NewsService.headlines(countryCode: Environment.sources.value)
+        let service = NewsService.headlines(sources: Environment.sources.value)
         let typeObject = Article.self
         var responseArticle: Article?
         var responseError: NetworkError?
@@ -57,7 +57,7 @@ class TopHeadlinesAPITests: XCTestCase {
     
     func testTopHeadlines_APIRequest_WithMockingjay_Success() {
         // given
-        let service = NewsService.headlines(countryCode: Environment.sources.value)
+        let service = NewsService.headlines(sources: Environment.sources.value)
         _ = service.headers
         let typeObject = News.self
         var responseNews: News?

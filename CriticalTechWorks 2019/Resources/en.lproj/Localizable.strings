@@ -6,11 +6,8 @@
   Copyright © 2019 Bruno. All rights reserved.
 */
 
-
-// TOP_HEADLINES
-"TopHeadlines.title" = "Top Headlines in ";
-
 // FAVORITES
+"favorites.close.title" = "Close";
 "favorites.title" = "Favorites";
 "favorites.button.title.save" = "Save to Favorites";
 "favorites.button.title.remove" = "Remove from Favorites";
