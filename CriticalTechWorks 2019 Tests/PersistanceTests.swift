@@ -36,93 +36,70 @@ class PersistanceTests: XCTestCase {
     }
 
     func testSaveArticle_Success() {
+        // given
+        let promise = expectation(description: "Article saved")
+        
         // when
-        sut.save { [weak self] in
-
-            let container = try! Container()
-            guard let url = self?.sut.url else { return }
-            let object = container.values(
-                Article.self,
-                matching: .url(url)
-            )
-
-            // then
-            XCTAssertEqual(object.results.count, 1, "Object was saved")
-            XCTAssertEqual(object.results.first?.url, self?.sut.url, "Object url is not the same")
+        sut.save {
+            promise.fulfill()
         }
+        wait(for: [promise], timeout: 5)
+        
+        // then
+        let container = try! Container()
+        let object = container.values(
+            Article.self,
+            matching: .url(sut.url)
+        )
+        
+        XCTAssertEqual(object.results.count, 1, "Object was not saved")
+        XCTAssertEqual(object.results.first?.url, self.sut.url, "Object url is not the same")
     }
     
     func testDeleteArticle_Success() {
         // given
-        sut.save { [weak self] in
-            
-            let container = try! Container()
-            guard let url = self?.sut.url else { return }
-            let object = container.values(
-                Article.self,
-                matching: .url(url)
-            )
-            
-            XCTAssertEqual(object.results.first?.url, self?.sut.url, "Objects was not saved")
+        let promiseSave = expectation(description: "Article saved")
+        let promiseDelete = expectation(description: "Article deleted")
+        
+        // given
+        sut.save {
+            promiseSave.fulfill()
         }
-
+        wait(for: [promiseSave], timeout: 5)
+        
         let container = try! Container()
+        let object = container.values(
+            Article.self,
+            matching: .url(sut.url)
+        )
+        XCTAssertEqual(object.results.first?.url, sut.url, "Objects was not saved")
+
+        // when
+        sut.delete {
+            promiseDelete.fulfill()
+        }
+        wait(for: [promiseDelete], timeout: 5)
+        
+        // then
         let objects = container.values(
             Article.self,
             matching: .url("\(sut.url)")
         )
-        XCTAssertEqual(objects.results.count, 1, "Objects saved should be 1")
-
-        // when
-        sut.delete {
-            let container = try! Container()
-            let objects = container.values(
-                Article.self,
-                matching: .url("\(self.sut.url)")
-            )
-            
-            // then
-            XCTAssertEqual(objects.results.count, 0, "Objects saved should be 0")
-        }
+        XCTAssertEqual(objects.results.count, 0, "Objects was not deleted")
     }
     
     func testArticleisSaved_Success() {
-        //given
-        sut.save { [weak self] in
-            // then
-            XCTAssertTrue(self?.sut.isSaved ?? false, "Object was not saved")
-        }
-    }
-
-    func testArticleisNotSaved_Success() {
-        //given
-        sut.save { [weak self] in
-            
-            let container = try! Container()
-            guard let url = self?.sut.url else { return }
-            let object = container.values(
-                Article.self,
-                matching: .url(url)
-            )
-            
-            XCTAssertEqual(object.results.first?.url, self?.sut.url, "Object was not saved")
-        }
-        
-        XCTAssertTrue(sut.isSaved, "Object was not saved")
+        // given
+        let promiseSave = expectation(description: "Article saved")
         
         // when
-        sut.delete {
-            let container = try! Container()
-            let objects = container.values(
-                Article.self,
-                matching: .url("\(self.sut.url)")
-            )
-            
-            XCTAssertEqual(objects.results.count, 0, "Objects saved should be 0")
+        sut.save {
+            promiseSave.fulfill()
         }
+        wait(for: [promiseSave], timeout: 5)
         
         // then
-        XCTAssertFalse(sut.isSaved, "Object should have been deleted saved")
+        XCTAssertTrue(sut.isSaved, "Object was not saved")
     }
     
     func testArticleConversionToManagedObject_Success() {
@@ -136,21 +113,23 @@ class PersistanceTests: XCTestCase {
         XCTAssertEqual(sut!.url, articleManagedObject.url)
     }
     
-    func testArticleValue_Success() {
-        //given
-        sut.save { [weak self] in
-            
-            let container = try! Container()
-            guard let url = self?.sut.url else { return }
-            let object = container.values(
-                Article.self,
-                matching: .url(url)
-            )
-            
-            XCTAssertEqual(object.value(at: 0).url, self?.sut.url, "Object was not saved")
-        }
+    func testArticleKey_isCorrect_Success() {
+        // given
+        let promiseSave = expectation(description: "Article saved")
         
-        XCTAssertTrue(sut.isSaved, "Object was not saved")
+        // when
+        sut.save {
+            promiseSave.fulfill()
+        }
+        wait(for: [promiseSave], timeout: 5)
+        
+        let container = try! Container()
+        let object = container.values(
+            Article.self,
+            matching: .url(sut.url)
+        )
+        
+        XCTAssertEqual(object.value(at: 0).url, sut.url, "Object was not saved")
     }
     
 }

@@ -9,7 +9,6 @@ import UIKit
 
 import Foundation
 
-// MARK: - News
 struct News: Codable {
     let status: String
     let totalResults: Int

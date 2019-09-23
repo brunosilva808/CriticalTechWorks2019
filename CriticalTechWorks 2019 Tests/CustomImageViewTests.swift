@@ -71,7 +71,7 @@ class CustomImageViewTests: XCTestCase {
         XCTAssertEqual(sut.image, imageFromCache, "Images should be equal")
     }
     
-    func testDownloadImage_Error() {
+    func testDownloadImage_UrlIncorrect() {
         // given
         let urlString = "https://www.error.com/image-vector/photograph-black-vector-icons-600w-251281057.jpg"
         let promise = expectation(description: "Completion handler called")
@@ -109,7 +109,7 @@ class CustomImageViewTests: XCTestCase {
         XCTAssertNil(sut.image, "Image should be nil")
     }
     
-    func testDownloadImage_Url_Nil() {
+    func testDownloadImage_UrlImage_Nil() {
         // given
         let urlString = ""
         let promise = expectation(description: "Completion handler called")
