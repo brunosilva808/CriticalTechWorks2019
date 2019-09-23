@@ -12,7 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeadlineViewController" customModule="CriticalTechWorks_2019_BBC_News" customModuleProvider="target">
             <connections>
-                <outlet property="contentLabel" destination="blA-UF-Ydd" id="lb0-Kq-SdT"/>
+                <outlet property="contentLabel" destination="SYV-ct-QJs" id="GBW-jT-ocd"/>
+                <outlet property="descriptionLabel" destination="blA-UF-Ydd" id="CCR-sy-6lm"/>
+                <outlet property="favouritesButton" destination="ajr-lT-kda" id="8fZ-3C-U2D"/>
                 <outlet property="headlineImage" destination="tkB-8m-16k" id="YV4-M0-79f"/>
                 <outlet property="titleLabel" destination="WVs-Sh-DSr" id="IGl-bT-1B0"/>
                 <outlet property="view" destination="Vez-e3-5cx" id="KWC-UJ-TQn"/>
@@ -112,7 +114,7 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVB-ne-Ibj">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="373"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="411.5"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tkB-8m-16k" customClass="CustomImageView" customModule="CriticalTechWorks_2019_BBC_News" customModuleProvider="target">
                                     <rect key="frame" x="16" y="52.5" width="343" height="200"/>
@@ -132,18 +134,37 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajr-lT-kda">
+                                    <rect key="frame" x="16" y="365.5" width="343" height="30"/>
+                                    <state key="normal" title="Save to Favourites"/>
+                                    <connections>
+                                        <action selector="saveToFavorites:" destination="-1" eventType="touchUpInside" id="EIX-0a-F3v"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYV-ct-QJs">
+                                    <rect key="frame" x="16" y="329" width="343" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="WVs-Sh-DSr" secondAttribute="trailing" constant="16" id="6JB-UM-JEb"/>
                                 <constraint firstAttribute="trailing" secondItem="blA-UF-Ydd" secondAttribute="trailing" constant="16" id="AI4-h0-sv2"/>
-                                <constraint firstAttribute="bottom" secondItem="blA-UF-Ydd" secondAttribute="bottom" constant="60" id="Atd-1K-b7Z"/>
                                 <constraint firstAttribute="trailing" secondItem="tkB-8m-16k" secondAttribute="trailing" constant="16" id="E5h-6M-iqq"/>
+                                <constraint firstItem="ajr-lT-kda" firstAttribute="leading" secondItem="qVB-ne-Ibj" secondAttribute="leading" constant="16" id="Fdt-5g-Ape"/>
+                                <constraint firstAttribute="trailing" secondItem="SYV-ct-QJs" secondAttribute="trailing" constant="16" id="JYc-Er-yht"/>
                                 <constraint firstItem="blA-UF-Ydd" firstAttribute="leading" secondItem="qVB-ne-Ibj" secondAttribute="leading" constant="16" id="T2P-Vf-Q9U"/>
                                 <constraint firstItem="blA-UF-Ydd" firstAttribute="top" secondItem="tkB-8m-16k" secondAttribute="bottom" constant="40" id="TG0-Cq-we2"/>
+                                <constraint firstAttribute="trailing" secondItem="ajr-lT-kda" secondAttribute="trailing" constant="16" id="Ypw-7q-gIK"/>
                                 <constraint firstItem="tkB-8m-16k" firstAttribute="centerX" secondItem="qVB-ne-Ibj" secondAttribute="centerX" id="a8L-sN-SFF"/>
+                                <constraint firstItem="SYV-ct-QJs" firstAttribute="top" secondItem="blA-UF-Ydd" secondAttribute="bottom" constant="16" id="dYN-0Y-gT4"/>
+                                <constraint firstItem="ajr-lT-kda" firstAttribute="top" secondItem="SYV-ct-QJs" secondAttribute="bottom" constant="16" id="evK-6c-dbg"/>
                                 <constraint firstItem="WVs-Sh-DSr" firstAttribute="leading" secondItem="qVB-ne-Ibj" secondAttribute="leading" constant="16" id="hdB-It-bEq"/>
+                                <constraint firstItem="SYV-ct-QJs" firstAttribute="leading" secondItem="qVB-ne-Ibj" secondAttribute="leading" constant="16" id="iSs-1K-l86"/>
                                 <constraint firstItem="WVs-Sh-DSr" firstAttribute="top" secondItem="qVB-ne-Ibj" secondAttribute="top" constant="16" id="ktn-0S-fk2"/>
+                                <constraint firstAttribute="bottom" secondItem="ajr-lT-kda" secondAttribute="bottom" constant="16" id="nJ9-Vn-uPK"/>
                                 <constraint firstItem="tkB-8m-16k" firstAttribute="leading" secondItem="qVB-ne-Ibj" secondAttribute="leading" constant="16" id="p12-Wk-iZe"/>
                                 <constraint firstItem="tkB-8m-16k" firstAttribute="top" secondItem="WVs-Sh-DSr" secondAttribute="bottom" constant="16" id="t1J-np-0u0"/>
                             </constraints>
