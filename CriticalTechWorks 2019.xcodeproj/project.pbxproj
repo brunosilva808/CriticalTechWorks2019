@@ -388,12 +388,9 @@
 			isa = PBXGroup;
 			children = (
 				15DC6E8623392588007FAB0C /* ViewControllers */,
-				15DC6E8123392586007FAB0C /* CustomImageViewTests.swift */,
-				15DC6E8323392587007FAB0C /* HeadlineTableViewCellTests.swift */,
-				15DC6E8023392586007FAB0C /* PersistanceTests.swift */,
-				15DC6E8523392588007FAB0C /* TopHeadlinesAPITests.swift */,
-				15DC6E8423392587007FAB0C /* image.jpg */,
-				15DC6E8223392586007FAB0C /* top_headlines.json */,
+				15DC6E9623392E0C007FAB0C /* View */,
+				15DC6E9723392E13007FAB0C /* Persistence */,
+				15DC6E9823392E25007FAB0C /* Networking */,
 				15DC6E7A23392570007FAB0C /* Info.plist */,
 			);
 			path = "CriticalTechWorks 2019 BBC News Tests";
@@ -407,6 +404,41 @@
 				15DC6E8923392588007FAB0C /* FavoritesHeadlinesViewControllerTests.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		15DC6E9623392E0C007FAB0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15DC6E8323392587007FAB0C /* HeadlineTableViewCellTests.swift */,
+				15DC6E9923392E4B007FAB0C /* Utils */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15DC6E9723392E13007FAB0C /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				15DC6E8023392586007FAB0C /* PersistanceTests.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		15DC6E9823392E25007FAB0C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				15DC6E8523392588007FAB0C /* TopHeadlinesAPITests.swift */,
+				15DC6E8223392586007FAB0C /* top_headlines.json */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		15DC6E9923392E4B007FAB0C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				15DC6E8423392587007FAB0C /* image.jpg */,
+				15DC6E8123392586007FAB0C /* CustomImageViewTests.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		3CFA73C8ABCB6B05FD48B7F8 /* Frameworks */ = {
