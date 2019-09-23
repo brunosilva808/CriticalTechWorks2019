@@ -21,14 +21,14 @@ class HeadlineViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
-        setupButtonTitle()
+//        setupButtonTitle()
     }
     
     private func setupUI() {
         titleLabel.text = article.title
         headlineImage.downloadImage(from: article.urlToImage ?? "")
         contentLabel.text = article.content
-        descriptionLabel.text = article.articleDescription
+//        descriptionLabel.text = article.articleDescription
     }
     
     private func setupButtonTitle() {
