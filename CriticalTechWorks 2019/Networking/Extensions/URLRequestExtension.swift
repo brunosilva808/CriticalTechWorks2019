@@ -15,11 +15,11 @@ extension URLRequest {
         self.init(url: urlComponents.url!)
         
         httpMethod = service.method.rawValue
-        service.headers?.forEach { key, value in
-            addValue(value, forHTTPHeaderField: key)
-        }
+//        service.headers?.forEach { key, value in
+//            addValue(value, forHTTPHeaderField: key)
+//        }
         
-        guard case let .requestParameters(parameters) = service.task, service.parametersEncoding == .json else { return }
-        httpBody = try? JSONSerialization.data(withJSONObject: parameters)
+//        guard case let .requestParameters(parameters) = service.task, service.parametersEncoding == .json else { return }
+//        httpBody = try? JSONSerialization.data(withJSONObject: parameters)
     }
 }

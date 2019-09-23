@@ -58,6 +58,7 @@ class TopHeadlinesAPITests: XCTestCase {
     func testTopHeadlines_APIRequest_WithMockingjay_Success() {
         // given
         let service = NewsService.headlines(countryCode: Environment.sources.value)
+        _ = service.headers
         let typeObject = News.self
         var responseNews: News?
         var responseError: NetworkError?

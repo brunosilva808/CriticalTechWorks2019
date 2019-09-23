@@ -108,5 +108,24 @@ class CustomImageViewTests: XCTestCase {
         // then
         XCTAssertNil(sut.image, "Image should be nil")
     }
+    
+    func testDownloadImage_Url_Nil() {
+        // given
+        let urlString = ""
+        let promise = expectation(description: "Completion handler called")
+        
+        // Mockingjay
+        let data = NSData()
+        self.stub(uri(urlString), jsonData(data as Data))
+        
+        // when
+        sut.downloadImage(from: urlString) {
+            promise.fulfill()
+        }
+        wait(for: [promise], timeout: 5)
+        
+        // then
+        XCTAssertNil(sut.image, "Image should be nil")
+    }
 
 }

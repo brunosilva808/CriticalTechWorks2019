@@ -52,6 +52,8 @@ class CustomImageView: UIImageView {
                     onComplete()
                 }
             }.resume()
+        } else {
+            onComplete()
         }
     }
     
