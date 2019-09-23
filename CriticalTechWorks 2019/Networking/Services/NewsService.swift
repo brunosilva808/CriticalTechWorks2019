@@ -9,7 +9,7 @@ import Foundation
 
 enum NewsService: ServiceProtocol {
     
-    case headlines(countryCode: String)
+    case headlines(sources: String)
     
     var path: String {
         switch self {
@@ -24,8 +24,8 @@ enum NewsService: ServiceProtocol {
     
     var task: Task {
         switch self {
-        case let .headlines(countryCode):
-            let parameters = ["country": countryCode]
+        case let .headlines(sources):
+            let parameters = ["sources": sources]
             return .requestParameters(parameters)
         }
     }

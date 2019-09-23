@@ -8,18 +8,21 @@
 
 import UIKit
 
+typealias SimpleCallBack = () -> Void
+
 class CustomImageView: UIImageView {
     
     let imageCache = NSCache<NSString, UIImage>()
     var imageUrlString: String?
     
-    func downloadImage(from urlString: String) {
+    func downloadImage(from urlString: String, onComplete: @escaping SimpleCallBack = {}) {
         
         imageUrlString = urlString
         self.image = nil
         
         if let imageFromCache = imageCache.object(forKey: urlString as NSString) {
             self.image = imageFromCache
+            onComplete()
             return
         }
         
@@ -27,6 +30,7 @@ class CustomImageView: UIImageView {
             URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
                 
                 if error != nil {
+                    onComplete()
                     return
                 }
                 
@@ -34,6 +38,7 @@ class CustomImageView: UIImageView {
                     if let data = data {
                         
                         guard let imageToCache = UIImage(data: data) else {
+                            onComplete()
                             return
                         }
                         
@@ -43,8 +48,12 @@ class CustomImageView: UIImageView {
                         
                         self?.imageCache.setObject(imageToCache, forKey: urlString as NSString)
                     }
+                    
+                    onComplete()
                 }
             }.resume()
+        } else {
+            onComplete()
         }
     }
     

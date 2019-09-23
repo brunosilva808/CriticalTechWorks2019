@@ -16,7 +16,7 @@ class TopHeadlinesViewController: BaseHeadlinesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "TopHeadlines.title".localized + Environment.sources.value
+        self.title = "\(Environment.sources.value)".capitalized
         getTopHeadlines()
         setupBarButton()
     }
@@ -31,7 +31,7 @@ class TopHeadlinesViewController: BaseHeadlinesViewController {
     
     func getTopHeadlines() {
         sessionProvider.request(type: News.self,
-                                service: NewsService.headlines(countryCode: Environment.sources.value)) { [weak self] (response) in
+                                service: NewsService.headlines(sources: Environment.sources.value)) { [weak self] (response) in
                                     switch response {
                                     case let .success(news):
                                         DispatchQueue.main.async {
@@ -49,7 +49,7 @@ class TopHeadlinesViewController: BaseHeadlinesViewController {
     @objc private func rightBarButtonPressed() {
         favoritesViewController = FavoritesHeadlinesViewController()
         favoritesViewController.articles = articles?.filter { $0.isSaved }
-        navigationController?.pushViewController(favoritesViewController, animated: true)
+        self.present(UINavigationController(rootViewController: favoritesViewController), animated: true, completion: nil)
     }
     
 }

@@ -1,14 +1,14 @@
 //
-//  CriticalTechWorks_2019_PT_Tests.swift
-//  CriticalTechWorks 2019 PT Tests
+//  CriticalTechWorks_2019_BBC_News_Tests.swift
+//  CriticalTechWorks 2019 BBC News Tests
 //
-//  Created by Bruno on 22/09/2019.
+//  Created by Bruno on 23/09/2019.
 //  Copyright © 2019 Bruno. All rights reserved.
 //
 
 import XCTest
 
-class TopHeadlinesPTTests: XCTestCase {
+class CriticalTechWorks_2019_BBC_News_Tests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,6 +21,13 @@ class TopHeadlinesPTTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+
+    func testPerformanceExample() {
+        // This is an example of a performance test case.
+        self.measure {
+            // Put the code you want to measure the time of here.
+        }
     }
 
 }

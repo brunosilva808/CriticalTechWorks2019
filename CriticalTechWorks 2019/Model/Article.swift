@@ -35,32 +35,24 @@ struct Article: Codable {
         case url
     }
     
-    mutating func save(completed: @escaping (() -> Void) ) {
-        DispatchQueue(label: "background").async {
-            autoreleasepool {
-                let container = try! Container()
-                try! container.write { transaction in
-                    transaction.add(self)
-                    completed()
-                }
-            }
+    func save(completed: @escaping (() -> Void) ) {
+        let container = try! Container()
+        try! container.write { transaction in
+            transaction.add(self)
+            completed()
         }
     }
     
-    mutating func delete(completed: @escaping (() -> Void) ) {
-        DispatchQueue(label: "background").async {
-            autoreleasepool {
-                let container = try! Container()
-                let objectsToDelete = container.values(
-                    Article.self,
-                    matching: .url("\(self.url)")
-                )
-                
-                try! container.write { transaction in
-                    objectsToDelete.results.forEach { transaction.delete($0) }
-                    completed()
-                }
-            }
+    func delete(completed: @escaping (() -> Void) ) {
+        let container = try! Container()
+        let objectsToDelete = container.values(
+            Article.self,
+            matching: .url("\(self.url)")
+        )
+        
+        try! container.write { transaction in
+            objectsToDelete.results.forEach { transaction.delete($0) }
+            completed()
         }
     }
 }

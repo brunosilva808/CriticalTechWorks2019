@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1571B0B823350A0F004AA911"
-               BuildableName = "CriticalTechWorks 2019 US.app"
-               BlueprintName = "CriticalTechWorks 2019 US"
+               BlueprintIdentifier = "1572D70D23313E7400CFBA6F"
+               BuildableName = "CriticalTechWorks 2019 BBC News.app"
+               BlueprintName = "CriticalTechWorks 2019 BBC News"
                ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,13 +29,23 @@
       codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "15DC6E7523392570007FAB0C"
+               BuildableName = "CriticalTechWorks 2019 BBC News Tests.xctest"
+               BlueprintName = "CriticalTechWorks 2019 BBC News Tests"
+               ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1571B0B823350A0F004AA911"
-            BuildableName = "CriticalTechWorks 2019 US.app"
-            BlueprintName = "CriticalTechWorks 2019 US"
+            BlueprintIdentifier = "1572D70D23313E7400CFBA6F"
+            BuildableName = "CriticalTechWorks 2019 BBC News.app"
+            BlueprintName = "CriticalTechWorks 2019 BBC News"
             ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,9 +66,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1571B0B823350A0F004AA911"
-            BuildableName = "CriticalTechWorks 2019 US.app"
-            BlueprintName = "CriticalTechWorks 2019 US"
+            BlueprintIdentifier = "1572D70D23313E7400CFBA6F"
+            BuildableName = "CriticalTechWorks 2019 BBC News.app"
+            BlueprintName = "CriticalTechWorks 2019 BBC News"
             ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -66,7 +76,7 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -75,9 +85,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1571B0B823350A0F004AA911"
-            BuildableName = "CriticalTechWorks 2019 US.app"
-            BlueprintName = "CriticalTechWorks 2019 US"
+            BlueprintIdentifier = "1572D70D23313E7400CFBA6F"
+            BuildableName = "CriticalTechWorks 2019 BBC News.app"
+            BlueprintName = "CriticalTechWorks 2019 BBC News"
             ReferencedContainer = "container:CriticalTechWorks 2019.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -86,7 +96,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
