@@ -29,6 +29,7 @@
                         <rect key="frame" x="16" y="46.5" width="288" height="200"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="200" id="GlG-Tm-pDU"/>
+                            <constraint firstAttribute="width" secondItem="7kR-aX-ixk" secondAttribute="height" multiplier="36:25" id="kFC-hg-GT5"/>
                         </constraints>
                     </imageView>
                 </subviews>
