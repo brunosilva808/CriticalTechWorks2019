@@ -11,7 +11,7 @@ import XCTest
 import Mockingjay
 
 class TopHeadlinesAPITests: XCTestCase {
-
+    
     var sessionProvider: URLSessionProvider!
     
     override func setUp() {
@@ -34,7 +34,7 @@ class TopHeadlinesAPITests: XCTestCase {
         // Mockingjay
         let path = Bundle(for: type(of: self)).path(forResource: "top_headlines", ofType: "json")!
         let data = NSData(contentsOfFile: path)!
-        let stringUrl = service.baseURL.absoluteString + service.path + "?country=PT&apiKey=58145f63433647a4884438f7fec6e6f5"
+        let stringUrl = service.baseURL.absoluteString + service.path + "?" + "\(Environment.sources.value)=\(Environment.sources.value)" + "&apiKey=58145f63433647a4884438f7fec6e6f5"
         self.stub(uri(stringUrl), jsonData(data as Data))
         
         // when
@@ -67,7 +67,7 @@ class TopHeadlinesAPITests: XCTestCase {
         // Mockingjay
         let path = Bundle(for: type(of: self)).path(forResource: "top_headlines", ofType: "json")!
         let data = NSData(contentsOfFile: path)!
-        let stringUrl = service.baseURL.absoluteString + service.path + "?country=PT&apiKey=58145f63433647a4884438f7fec6e6f5"
+        let stringUrl = service.baseURL.absoluteString + service.path + "?" + "\(Environment.sources.value)=\(Environment.sources.value)" + "&apiKey=58145f63433647a4884438f7fec6e6f5"
         self.stub(uri(stringUrl), jsonData(data as Data))
         
         // when
@@ -87,5 +87,5 @@ class TopHeadlinesAPITests: XCTestCase {
         XCTAssertNil(responseError, "Top Headlines API error should be nil")
         XCTAssertNotNil(responseNews, "Top Headlines API response should not be nil")
     }
-
+    
 }
